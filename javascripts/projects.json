@@ -1,0 +1,39 @@
+{
+    "projects": [{
+        "title": "FtpDownloader",
+        "version": "1.0",
+        "date": "2112-12-21T00:00:00.000Z",
+        "description1": "FtpDownloader is an Windows Forms application that lets you download an entire FTP(Linux or Windows based) just by entering its path and credentials.",
+        "image": "https://camo.githubusercontent.com/126a8c3206c60b3353fc63a934450115a528e92f/68747470733a2f2f692e6779617a6f2e636f6d2f35656139303136396163353135306530383638323035303837636165306461612e706e67",
+        "description2": "The way it works is pretty simple, it makes a call to check and retrieve a list of current files/directorys of a certain ftp path, then downloads all the files, and then creates a folder. When the folder is created, it checks again for files and directories, this will do it until there is no more directories inside directories.",
+        "link": "https://github.com/emimontesdeoca/FtpDownloader",
+        "githubname": "emimontesdeoca/FtpDownloader"
+    }, {
+        "title": "TorrentFolderSynchronizer",
+        "version": "1.0",
+        "date": "2017-04-09T00:00:00.000Z",
+        "description1": "TorrentFolderSynchronizer or TFS is an application that synchronizes your blackhole torrent foder located in a computer with your FTP torrent folder where you can upload torrents.",
+        "image": "",
+        "description2": "The main idea was to have different clients with torrents to download and a single server that handles all the torrent downloads, which will cause a big trouble if you have to manually download them to a folder, then copy it to a usb flash drive and then copy onto the server for it to detect it, and in the case that it does not have the blackhole folder mechanism you will have to manually add them one by one.",
+        "link": "https://github.com/emimontesdeoca/TorrentFolderSynchronizer",
+        "githubname": "emimontesdeoca/TorrentFolderSynchronizer"
+    }, {
+        "title": "TorrentHole",
+        "version": "1.0",
+        "date": "2017-04-06T00:00:00.000Z",
+        "description1": "TorrentHole is a Windows Forms application that connects to a FTP server to download torrents from a certain generated folder.",
+        "image": "https://camo.githubusercontent.com/3580e3d36abdeca064277626ba4f4bada3780c94/68747470733a2f2f692e6779617a6f2e636f6d2f61336532666630613738626265633533663731313665323366376166313664642e706e67",
+        "description2": "The main intention when I decided to develop this application was to automatize even more the process of adding torrents to the bittorrent's blackhole folder. Even that this application is actually not automatized at all, this lets you download from a certain folder created by the application itself when adding the FTP server, all the .torrent in that folder.",
+        "link": "https://github.com/emimontesdeoca/TorrentHole",
+        "githubname": "emimontesdeoca/TorrentHole"
+    }, {
+        "title": "PingMyNetwork",
+        "version": "2.0",
+        "date": "2017-03-10T00:00:00.000Z",
+        "description1": "PingMyNetwork is a web application that lets you check the status of your lan devices, like servers, mobile phones, desktops PCs, from outside. The project runs in a server which has a website where you can add hosts and scan the network to see who is connected. Also you can add public IPs like google-dns(8.8.8.8).",
+        "image": "https://github.com/emimontesdeoca/PingMyNetwork-landing-page/blob/master/assets/images/desktop-images/8.png?raw=true",
+        "description2": "This application was developed thinking in those homelabbers that want to know how is the network and they are not in the network currently.",
+        "link": "https://github.com/emimontesdeoca/PingMyNetwork",
+        "githubname": "emimontesdeoca/PingMyNetwork"
+    }]
+}
