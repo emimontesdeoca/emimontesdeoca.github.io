@@ -1,8 +1,8 @@
 {
     "projects": [{
         "title": "FtpDownloader",
-        "version": "1.0",
-        "date": "2112-12-21T00:00:00.000Z",
+        "version": "2.0",
+        "date": "2017-04-12T00:00:00.000Z",
         "description1": "FtpDownloader is an Windows Forms application that lets you download an entire FTP(Linux or Windows based) just by entering its path and credentials.",
         "image": "https://camo.githubusercontent.com/126a8c3206c60b3353fc63a934450115a528e92f/68747470733a2f2f692e6779617a6f2e636f6d2f35656139303136396163353135306530383638323035303837636165306461612e706e67",
         "description2": "The way it works is pretty simple, it makes a call to check and retrieve a list of current files/directorys of a certain ftp path, then downloads all the files, and then creates a folder. When the folder is created, it checks again for files and directories, this will do it until there is no more directories inside directories.",
