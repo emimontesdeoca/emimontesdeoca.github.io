@@ -1,5 +1,14 @@
 {
     "projects": [{
+        "title": "jordgubbe",
+        "version": "1.0",
+        "date": "2017-04-13T00:00:00.000Z",
+        "description1": "A landing page where you can list all the apps and services stored in different places and access them from a single page.",
+        "image": "https://camo.githubusercontent.com/e9d496d519b8fb6255ab0afa4aa9b45100e2ba66/687474703a2f2f692e696d6775722e636f6d2f426e53386975682e706e67",
+        "description2": "So the main idea for this landing page was to have all my usual links plus the services stored on different servers/vms, like Deluge, CouchPotato, Sonarr and many more.",
+        "link": "https://github.com/emimontesdeoca/jordgubbe",
+        "githubname": "emimontesdeoca/jordgubbe"
+    },{
         "title": "FtpDownloader",
         "version": "2.0",
         "date": "2017-04-12T00:00:00.000Z",
@@ -8,7 +17,7 @@
         "description2": "The way it works is pretty simple, it makes a call to check and retrieve a list of current files/directorys of a certain ftp path, then downloads all the files, and then creates a folder. When the folder is created, it checks again for files and directories, this will do it until there is no more directories inside directories.",
         "link": "https://github.com/emimontesdeoca/FtpDownloader",
         "githubname": "emimontesdeoca/FtpDownloader"
-    }, {
+    },  {
         "title": "TorrentFolderSynchronizer",
         "version": "1.0",
         "date": "2017-04-09T00:00:00.000Z",
