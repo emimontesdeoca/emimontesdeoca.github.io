@@ -4,7 +4,7 @@
         "version": "1.0",
         "date": "2017-04-13T00:00:00.000Z",
         "description1": "A landing page where you can list all the apps and services stored in different places and access them from a single page.",
-        "image": "https://camo.githubusercontent.com/e9d496d519b8fb6255ab0afa4aa9b45100e2ba66/687474703a2f2f692e696d6775722e636f6d2f426e53386975682e706e67",
+        "image": "http://i.imgur.com/Rz3onJW.png",
         "description2": "So the main idea for this landing page was to have all my usual links plus the services stored on different servers/vms, like Deluge, CouchPotato, Sonarr and many more.",
         "link": "https://github.com/emimontesdeoca/jordgubbe",
         "githubname": "emimontesdeoca/jordgubbe"
