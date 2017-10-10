@@ -1,6 +1,6 @@
 body {
   background-color: #111111;
-  font-family: "consolas";
+  font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .line::before {
-  content: "#-------------------------------------------";
+  content: "#------------------------------------";
 }
 
 .tag {
