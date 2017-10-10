@@ -7,7 +7,7 @@
     content: "#-----------------------------------------";
   }
   .memo, .cp {
-    text-align: center;
+    
   }
 }
 
@@ -20,7 +20,7 @@
     content: "#------------------------------------";
   }
   .memo, .cp {
-    text-align: center;
+    
   }
 }
 
@@ -33,7 +33,7 @@
     content: "#----------------------------------------";
   }
   .memo, .cp {
-    text-align: center;
+    
   }
 }
 
@@ -46,7 +46,7 @@
     content: "#----------------------------------------";
   }
   .memo, .cp {
-    text-align: center;
+    
   }
 }
 
@@ -59,7 +59,7 @@
     content: "#----------------------------------------";
   }
   .memo, .cp {
-    text-align: left;
+    
   }
   body {
     text-size-adjust: none;
