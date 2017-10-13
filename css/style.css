@@ -21,14 +21,14 @@ pre {
 pre span {
   display: block;
   line-height: 1.15rem;
-
 }
 
 pre span:before {
   counter-increment: line;
   content: counter(line);
   display: inline-block;
-  border-right: 1px solid #434a58;;
+  border-right: 1px solid #434a58;
+  ;
   width: 3ch;
   padding: 0 .5em;
   margin-right: .5em;
@@ -62,4 +62,12 @@ div {
 
 .num {
   color: #d19a66;
+}
+
+.func {
+  color: #4fafe3;
+}
+
+.ask {
+  color: #44b6b9;
 }
