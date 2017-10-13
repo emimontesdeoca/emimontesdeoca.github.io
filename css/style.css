@@ -1,70 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #111111;
-  font-family: 'Inconsolata', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  margin-left: 10%;
-  margin-top: 5%;
-}
-
-.item {
-  padding-bottom: 25px;
-}
-
-.header, .spacer, p {
-  color: #383838 !important;
-  width: inherit !important;
-  white-space: inherit !important;
-}
-
-.spacer {
-  display: inline;
-  padding-right: 5px;
-}
-
-.line::before {
-  content: "#------------------------------------";
-}
-
-.tag {
+  background-color: #282c34;
   color: white;
-  width: 1px;
-  white-space: nowrap;
-  padding-right: 5px
 }
 
-td, a:link, a:visited, a:hover, a:active {
-  color: white;
-  text-decoration: none;
+pre {
+  font-family: 'Source Code Pro', monospace;
+  width: 50ch;
+  margin: 4em auto;
+  padding: .5em;
+  line-height: 0;
+  counter-reset: line;
 }
 
-.copy {
-  color: white !important;
+pre span {
+  display: block;
+  line-height: 1.15rem;
+
 }
 
-td:nth-child(2) {
-  display: inline-flex;
+pre span:before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  border-right: 1px solid #434a58;;
+  width: 3ch;
+  padding: 0 .5em;
+  margin-right: .5em;
+  color: #434a58;
+  text-align: right;
 }
 
-.delay1 {
-  animation-delay: 0.30s;
+pre a {
+  cursor: text;
 }
 
-.delay2 {
-  animation-delay: 0.60s;
+div {
+  display: inline-block;
 }
 
-.delay3 {
-  animation-delay: 0.90s;
+.comments {
+  color: #5c6370;
 }
 
-.delay4 {
-  animation-delay: 1.20s;
+.obj {
+  color: #c678dd;
 }
 
-.delay5 {
-  animation-delay: 1.50s;
+.equals {
+  color: #56b6c2;
+}
+
+.text {
+  color: #98c379;
+}
+
+.num {
+  color: #d19a66;
 }
