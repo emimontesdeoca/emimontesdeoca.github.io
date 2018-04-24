@@ -16,12 +16,14 @@ layout: default
     {{ content }}
   </div>
 
+  {% include share-bar.html %}
+
   {% if site.comments == true and page.comments != false %}
     <div class="post-comments" itemprop="comment">
       {% include custom_comments_provider.html %}
     </div>
   {% endif %}
 
-  {% include share-bar.html %}
+ 
 
 </article>
