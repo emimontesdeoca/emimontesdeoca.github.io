@@ -2,6 +2,8 @@
 layout: post
 title: "Integration test using Microsoft's Bot Framework and DirectLine (2)"
 categories: development
+tags:
+  - botframework
 ---
 
 #### In this part, we will make the DirectLine authorization and get the values from the bot's response.
