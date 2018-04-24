@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Integration test using Microsoft's Bot Framework  and DirectLine (1)"
+title: "Integration test using Microsoft's Bot Framework and DirectLine (1)"
 categories: development
+tags:
+  - botframework
 ---
 
 Since I started working at Intelequia Software Solutions for a short period of time, I've been asigned to work on integration test for the Bot Framework.
