@@ -36,8 +36,8 @@ twitter_username: emimontesdeocaa
 twitter_image:
 facebook_app_id:
 facebook_image: 
-google_analytics:
-comments: false
+google_analytics: UA-77459774-3
+comments: true
 
 # Plugins
 plugins:
@@ -72,3 +72,4 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
+    
