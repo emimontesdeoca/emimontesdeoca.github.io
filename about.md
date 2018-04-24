@@ -58,28 +58,28 @@ Regarding the technologies that I use, these are the ones that I'm most conforta
 
 I'm passionate of what I like to do, that's why I like to develop just for the people:
 
-- FTPDownloader: 💻 Download an entire FTP(Linux or Windows based) by entering its path and credentials.
-- Backcraft: 📂 A backup tool for Minecraft.
-- jordgubbe: 🍓 A metro styled landing page for your links and apps.
-- emify: 🎵 Something something a Spotify clone.
-- SeriesBeautifier: 📹 SeriesBeautifier is a tool to clean and sort your multimedia storage.
-- CanaryImages: ⛰️ Small game built in Jquery UI to get known about the Canary Islands.
-- shopping-list: 📋 Minimalistic shopping list built with JavaScript using Bootstrap and localStorage. 
+- [FTPDownloader](https://github.com/emimontesdeoca/FTPDownloader): 💻 Download an entire FTP(Linux or Windows based) by entering its path and credentials.
+- [Backcraft](https://github.com/emimontesdeoca/Backcraft): 📂 A backup tool for Minecraft.
+- [jordgubbe](https://github.com/emimontesdeoca/jordgubbe): 🍓 A metro styled landing page for your links and apps.
+- [emify](https://github.com/emimontesdeoca/emify): 🎵 Something something a Spotify clone.
+- [SeriesBeautifier](https://github.com/emimontesdeoca/SeriesBeautifier): 📹 SeriesBeautifier is a tool to clean and sort your multimedia storage.
+- [CanaryImages](https://github.com/emimontesdeoca/CanaryImages): ⛰️ Small game built in Jquery UI to get known about the Canary Islands.
+- [shopping-list](https://github.com/emimontesdeoca/shopping-list): 📋 Minimalistic shopping list built with JavaScript using Bootstrap and localStorage. 
 
 
 ## Socials
 
 You can find me in different socials:
 
-- Reddit - [emimontesdeoca](https://www.reddit.com/user/emontesdeoca/)
+- Reddit - [@emimontesdeoca](https://www.reddit.com/user/emontesdeoca/)
 - Linkedin - [emimontesdeoca](https://www.linkedin.com/in/emimontesdeoca/)
 - Twitter - [@emimontesdeocaa](https://twitter.com/emimontesdeocaa)
-- Github - [emimontesdeoca](https://github.com/emimontesdeoca)
+- Github - [@emimontesdeoca](https://github.com/emimontesdeoca)
 - Stackoverflow - [emimontesdeoca](https://stackoverflow.com/users/7823470/emiliano-montesdeoca)
 - Stackoverflow ES - [emimontesdeoca](https://es.stackoverflow.com/users/82094/emiliano-montesdeoca)
-- Instagram - [emimontesdeoca](https://www.instagram.com/emimontesdeoca/)
+- Instagram - [@emimontesdeoca](https://www.instagram.com/emimontesdeoca/)
 - Facebook - [emimontesdeoca](https://www.facebook.com/emimontesdeocadelpuerto)
-- Mail - [emimontesdeoca](emontesdeoc@gmail.com)
+- Mail - [emontesdeoc@gmail.com](mailto:emontesdeoc@gmail.com)
 
 
 
