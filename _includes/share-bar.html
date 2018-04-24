@@ -93,12 +93,12 @@
 .fa-envelope:hover {
     background-color: #444444;
 }
+#share-bar > div > a {
+    text-decoration: none !important;
+}
 </style>
 
-<div id="share-bar">
-
-    <h4>Share this:</h4>
-
+<div id="share-bar" class="text-align:center">
     <div class="share-buttons">
         <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
@@ -144,7 +144,7 @@
 
         <a  href="mailto:emontesdeoc@gmail.com?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}"
             title="Share via Email" >
-            <i class="fa fa-envelope share-button"> email</i>
+            <i class="fa fa-envelope share-button"></i>
         </a>
     </div>
 

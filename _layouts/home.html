@@ -30,6 +30,8 @@ layout: default
             <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
           </p>
         {% endif %}
+
+        {% include share-bar.html %}
       </li>
     {% endfor %}
   </ul>
