@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Integration test with Bot Framework (1)"
+title: "Integration test using Microsoft's Bot Framework  and DirectLine (1)"
 ---
 
 Since I started working at Intelequia Software Solutions for a short period of time, I've been asigned to work on integration test for the Bot Framework.
@@ -133,7 +133,7 @@ We have the json file perfectly formatted, now we have to load it into the solut
 
 ```
 
-
+And this is the object that has the name, request, response and assert for the test case.
 
 ``` csharp
 

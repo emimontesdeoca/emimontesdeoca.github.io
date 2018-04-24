@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: emi
+title: Emiliano Montesdeoca
 author: Emiliano Montesdeoca del Puerto
 description: Blog about me.
 baseurl: "/"
