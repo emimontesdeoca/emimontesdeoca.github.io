@@ -405,7 +405,7 @@ I strongly think that this way is much better overall for the integrity of the t
 
 -----
 
-**Well that's all for this guide, please remember that this guide is meant to be a continuation fo the single cases guide, if you feel lost, check that guide which is longer and has more explanation for everything.**
+**Well that's all for this guide, please remember that this guide is meant to be a continuation of the single cases guide, if you feel lost, check that guide which is longer and has more explanation for everything.**
 
 Remember that all the code is stored in my github in [this](https://github.com/emimontesdeoca/integration-test-directline-bot-framework) repository.
 
