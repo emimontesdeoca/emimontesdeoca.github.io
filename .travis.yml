@@ -5,7 +5,7 @@ rvm:
 - 2.4.2
 env:
   global:
-  - secure: B4kIu7L1CYoq/opw+qABn9ZLWTCrXUP9DqHga3qyITw4Pr7THxywvkkCKdbBG4nhQqk116nFSTipyv6ly6sxnAA7EsvTK4Bi8gK+uGTFI290J0m3BzEqsRwJt5A1mle+SR2OeZMZCAqXQVj1Su5RXARXSdkeImTh3ldDmKQgawe0MGKsmYOBsll7ATAQoOpmUMXpxu2Vb+KtwZY8xU+JnLnO7YP9V4sWmZy6zKHCvbNOhSGdct11LZcrcG/FuJh/xavfTmv62etsDDkVRhGj0VTQVHNTk8UZ9Qf/wmC7GGh93XDxCHlddg2zqIIKEpWQuSpF6WJ7DSLdPvjvtvAlIzjpOgy3shygX1C8kbXzDNhsbeEihRIqs9qmcBpujjp2DlPkT27Su4wfLKNrIPFsIhXJZD9yrqcnLZheJkVIq9+WaVI8sLwhgfSymd6AXCbvKHF4ruXBaeWOVDDgnlyLZtbna3pPSL7hsCfu9E9P8Ba3p4w0LdMZ2Nah1OQMcjGlDNfCaXaFvO4vhcZIkRyh8hlU2/64fs9/4F6ozTp50quao1JTnMqB8DQqGzinKY4NHFYohaw16sdYQh35LXE8eku8llD6uLwz6WNXjVwtEwGpMMGK9XMggJZJaRKx482KkCHgMjrBP35/dj7oVLHhBB1XeU4HL7YrJD8eEy85OZQ=
+    secure: oBmJqU4086j43JoU2hg8mJgex0RznE0br8ofbwTsIZgMZ5ym9i5pok1aogDYdUeP6itX0AyRWQZdrSj08nuHirmAtInfoUXt5+3OLwSYBlxObI2cM3AwmNPBGkdzyNBBbY97GOkM8AdnLY9EI3alzrfK6M70ubYyyCA/pns7VrkiMPG97BpFXS/UAlG7dAqJOWQKSo+3ptTINdpaXHyKK/v8vqrAfAhMyX3BG9HHX+Ry/PfFNKohqy6u15NZCOKx+UhUvKg/fYEz71Qdk2hYuCg3umb+Lba1tMoOmOLHXTlBo6Oi8OoCQB9H/ueDse782CtsTqki6zzA2EEYjmkImSA1Utwe29ToG4y8bbPJdfp43h023o/gBub6klO6jyJpwcHyLgqLSfyzcEGN9oG92GPwel0UNoInJAqoJJVvTv+zrKOW3h7yvSiEwMGaZ1Jo+pegQ2Y1+ntzoDyiP1biEK8wrWNfFoTQSazmQLuEKWwx7GD852a44G2wFHu2hlairSKY/T6WYMosx+feBloVd28FgCIklpB1eVMh7h/cO0VsRKJPiZ/2dF1C4vZtJevbcV30u4mtxfGdcPbW+D0t2iJMrOLlWC44eb67yjQ+6fFwwJbeR1uaWdyO/H5GXKbStX18b2KLvDasYTvQeYBVHZKAUtKCzXq7iZJvASK9ujE=
 before_install:
 - gem update --system
 - gem update --remote bundler
@@ -13,7 +13,8 @@ before_script:
 - git config --global user.name "$(git --no-pager show --no-patch --format='%an')"
 - git config --global user.email "$(git --no-pager show --no-patch --format='%ae')"
 script:
-- git clone -b master --depth 1 "https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" _site >/dev/null 2>&1
+- git clone -b master --depth 1 "https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git"
+  _site >/dev/null 2>&1
 - rm -rf _site/*
 - bundle exec jekyll build
 after_success:
