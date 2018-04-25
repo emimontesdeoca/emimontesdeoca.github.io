@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Integration test using Microsoft's Bot Framework and DirectLine for flow cases"
-categories: development
+categories:
+  - development
 tags:
   - botframework
 ---
