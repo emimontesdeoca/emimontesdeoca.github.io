@@ -9,7 +9,7 @@ tags:
 
 Since I started working at a company for a short period of time, I've been asigned to work on integration test for the Bot Framework.
 
-Intelequia is working on bot solution for business, so my work is to make the bot to be as stable as posible, but first, what is Bot Framework?
+My work in the group is to make the bot to be as stable as posible, but first, what is Bot Framework?
 
 > Build, connect, deploy, and manage intelligent bots to naturally interact with your users on a website, app, Cortana, Microsoft Teams, Skype, Slack, Facebook Messenger, and more. Get started quick with a complete bot building environment, all while only paying for what you use.
 
