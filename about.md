@@ -10,6 +10,8 @@ I'm a full stack developer based on Tenerife, Spain. I do enjoy coding as a hobb
 
 Also I'm a proud member of the PCMR.
 
+You can find my resume in spanish [here](https://drive.google.com/open?id=1idOWXUlALiJ6VXLn-pBlxboxDwjZFGv-).
+
 ## Education
 
 I've graduated from different studies:
