@@ -1,8 +1,9 @@
 ---
+title: About
 layout: page
-title: "About"
-permalink: /about/
 ---
+![Profile Image]({{ site.url }}/{{ site.picture }})
+
 
 Hello! My name is Emiliano, 
 
@@ -35,16 +36,18 @@ Regarding the technologies that I use, these are the ones that I'm most conforta
   - C#
   - Java
   - Javascript
+  - Typescript
 - **Frontend**
   - HTML5
   - CSS3
   - JS
 - **Backend**
-  - asp.net Forms
-  - asp.net MVC
+  - ASP.net Forms
+  - ASP.net MVC
+  - ASP.net Core
   - Java ee
 - **Frontend frameworks**
-  - Angular
+  - Angular 5/6
   - Bootstrap
   - Jquery
   - Material
