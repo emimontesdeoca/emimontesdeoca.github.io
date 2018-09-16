@@ -7,13 +7,9 @@ rvm:
 branches:
   only:
   - master
-  - gh-pages # test gh-pages branch
-  - /pages-(.*)/
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speed up html-proofer install
 
 sudo: false # route build to the container-based infrastructure for faster build
-
-cache: bundler # caching bundler gem packages will speed up build
