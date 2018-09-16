@@ -62,13 +62,13 @@ Regarding the technologies that I use, these are the ones that I'm most conforta
 
 I'm passionate of what I like to do, that's why I like to develop just for the people:
 
-- [FTPDownloader](https://github.com/emimontesdeoca/FTPDownloader): 💻 Download an entire FTP(Linux or Windows based) by entering its path and credentials.
-- [Backcraft](https://github.com/emimontesdeoca/Backcraft): 📂 A backup tool for Minecraft.
-- [jordgubbe](https://github.com/emimontesdeoca/jordgubbe): 🍓 A metro styled landing page for your links and apps.
-- [emify](https://github.com/emimontesdeoca/emify): 🎵 Something something a Spotify clone.
-- [SeriesBeautifier](https://github.com/emimontesdeoca/SeriesBeautifier): 📹 SeriesBeautifier is a tool to clean and sort your multimedia storage.
-- [CanaryImages](https://github.com/emimontesdeoca/CanaryImages): ⛰️ Small game built in Jquery UI to get known about the Canary Islands.
-- [shopping-list](https://github.com/emimontesdeoca/shopping-list): 📋 Minimalistic shopping list built with JavaScript using Bootstrap and localStorage. 
+- [FTPDownloader](https://github.com/emimontesdeoca/FTPDownloader): ðŸ’» Download an entire FTP(Linux or Windows based) by entering its path and credentials.
+- [Backcraft](https://github.com/emimontesdeoca/Backcraft): ðŸ“‚ A backup tool for Minecraft.
+- [jordgubbe](https://github.com/emimontesdeoca/jordgubbe): ðŸ“ A metro styled landing page for your links and apps.
+- [emify](https://github.com/emimontesdeoca/emify): ðŸŽµ Something something a Spotify clone.
+- [SeriesBeautifier](https://github.com/emimontesdeoca/SeriesBeautifier): ðŸ“¹ SeriesBeautifier is a tool to clean and sort your multimedia storage.
+- [CanaryImages](https://github.com/emimontesdeoca/CanaryImages): â›°ï¸ Small game built in Jquery UI to get known about the Canary Islands.
+- [shopping-list](https://github.com/emimontesdeoca/shopping-list): ðŸ“‹ Minimalistic shopping list built with JavaScript using Bootstrap and localStorage. 
 
 
 ## Socials
