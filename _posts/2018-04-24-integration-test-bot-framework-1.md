@@ -1,15 +1,9 @@
 ---
-title: "Integration test using Microsoft's Bot Framework and DirectLine (1)"
 layout: post
-date: 2018-04-24 22:48
-image: /assets/images/markdown.jpg
-headerImage: false
-tag:
-- botframework
-category: blog
-author: emi
-description: Integration test using Microsoft's Bot Framework and DirectLine (1)
-# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+title: "Integration test using Microsoft's Bot Framework and DirectLine (1)"
+description: "Integration test using Microsoft's Bot Framework and DirectLine (1)"
+comments: true
+keywords: "botframework"
 ---
 
 Since I started working at a company for a short period of time, I've been asigned to work on integration test for the Bot Framework.

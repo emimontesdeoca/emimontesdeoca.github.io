@@ -1,16 +1,11 @@
 ---
-title: "Integration test using Microsoft's Bot Framework and DirectLine (2)"
 layout: post
-date: 2018-04-24 22:48
-image: /assets/images/markdown.jpg
-headerImage: false
-tag:
-- botframework
-category: blog
-author: emi
-description: Integration test using Microsoft's Bot Framework and DirectLine (2)
-# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="
+title: "Integration test using Microsoft's Bot Framework and DirectLine (2)"
+description: "Integration test using Microsoft's Bot Framework and DirectLine (2)"
+comments: true
+keywords: "botframework"
 ---
+
 
 #### In this part, we will make the DirectLine authorization and get the values from the bot's response.
 

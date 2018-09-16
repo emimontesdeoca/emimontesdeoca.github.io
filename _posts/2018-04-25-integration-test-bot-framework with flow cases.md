@@ -1,17 +1,10 @@
 ---
-title: "Integration test using Microsoft's Bot Framework and DirectLine for flow cases"
 layout: post
-date: 2018-04-25 22:48
-image: /assets/images/markdown.jpg
-headerImage: false
-tag:
-- botframework
-category: blog
-author: emi
-description: Integration test using Microsoft's Bot Framework and DirectLine for flow cases
-# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="
+title: "Integration test using Microsoft's Bot Framework and DirectLine for flow cases"
+description: "Integration test using Microsoft's Bot Framework and DirectLine for flow cases"
+comments: true
+keywords: "botframework"
 ---
-
 ## Introduction
 
 In the previous blog posts, we did some integration test for single cases. "Single cases" are those cases that after asking the bot something, he will reply only once and then we compare the results.

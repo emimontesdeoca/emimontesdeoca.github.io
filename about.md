@@ -1,9 +1,8 @@
 ---
-title: About
 layout: page
+title: About
+permalink: /about/
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
-
 
 Hello! My name is Emiliano, 
 
@@ -85,6 +84,7 @@ You can find me in different socials:
 - Instagram - [@emimontesdeoca](https://www.instagram.com/emimontesdeoca/)
 - Facebook - [emimontesdeoca](https://www.facebook.com/emimontesdeocadelpuerto)
 - Mail - [emontesdeoc@gmail.com](mailto:emontesdeoc@gmail.com)
+
 
 
 

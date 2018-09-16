@@ -1,50 +1,45 @@
---- 
-about: true
-animation: true
-authors: 
-  emi: 
-    bio: "Software developer and keyboard lover"
-    external-image: false
-    name: "Emiliano Montesdeoca"
-    picture: assets/images/james.jpg
-    twitter: emimontesdeocaa
-bio: "Software developer and keyboard lover"
-blog: true
-description: "A blog about software and stuff related"
-disqus: 
-  categories: 
-    - blog
-    - project
-  shortname: https-emimontesdeoca-github-io
-email: emontesdeoc@gmail.com
-external-image: false
-facebook: emimontesdeocadelpuerto
-github: emimontesdeoca
-instagram: emimontesdeoca
-jekyll-mentions: 
-  base_url: "https://github.com"
-linkedin: emimontesdeoca
-name: "Emiliano Montesdeoca"
-permalink: "/:title/"
-picture: assets/images/profile.jpg
-plugins: 
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-admin
-post-advance-links: 
-  - blog
-projects: true
-read-time: true
-reddit: emontesdeoca
-related: true
-resume: true
-resume-external: true
-resume-url: "https://drive.google.com/open?id=1idOWXUlALiJ6VXLn-pBlxboxDwjZFGv-"
-show-author: true
-show-tags: true
-stackoverflow: 7823470/emiliano-montesdeoca
-twitter: emimontesdeocaa
-url: "https://emimontesdeoca.github.io"
-width: large
+# Site settings
+title_left    : "Think"
+title_right   : "space" # default: ""
+description   : "Minimalist Jekyll theme for technical writing blog."
+keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
+url           : https://heiswayi.github.io/thinkspace # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
+
+google_analytics  : UA-XXXXX-XX
+twitter_username  : ""
+comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : ""
+postshare_enabled : false
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source      : ./
+destination : ./_site
+
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
+
+# Author settings
+author:
+  name     : "John Doe"
+
+plugins:
+  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
