@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Integration test using Microsoft's Bot Framework and DirectLine (2)"
+title: "Integration test using Bot Framework and DirectLine (2)"
 description: "Integration test using Microsoft's Bot Framework and DirectLine (2)"
 comments: true
 keywords: "botframework"

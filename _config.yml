@@ -1,15 +1,15 @@
 # Site settings
 title_left    : "emi"
-title_right   : "montesdeoca" # default: ""
-description   : "Software engineer"
-keywords      : "Software, hardware, engineer, coding, programming"
+title_right   : "" # default: ""
+description   : "software engineer"
+keywords      : "software, hardware, engineer, coding, programming"
 url           : https://emimontesdeoca.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
 google_analytics  : UA-XXXXX-XX
 twitter_username  : "emimontesdeocaa"
-comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+comments_enabled  : true # if enabled (set to true), please provide your disqus_username
 disqus_shortname  : "emimontesdeoca"
 postshare_enabled : true
 
