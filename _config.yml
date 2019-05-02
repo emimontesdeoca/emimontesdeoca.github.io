@@ -7,10 +7,10 @@ url           : https://emimontesdeoca.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
-google_analytics  : UA-XXXXX-XX
+google_analytics  : UA-125245336-4
 twitter_username  : "emimontesdeocaa"
 comments_enabled  : true # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : "emimontesdeoca"
+disqus_shortname  : "emilianomontesdeoca"
 postshare_enabled : true
 
 # Build settings

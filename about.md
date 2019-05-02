@@ -12,6 +12,8 @@ Also I'm a proud member of the PCMR.
 
 You can find my resume in spanish [here](https://drive.google.com/open?id=1idOWXUlALiJ6VXLn-pBlxboxDwjZFGv-).
 
+
+<!--
 ## Education
 
 I've graduated from different studies:
@@ -19,7 +21,7 @@ I've graduated from different studies:
 - In 2016 I graduated as a **Technician in Microcomputer Systems and Networks** with an average grade of 9,2 from a 2 year course in Cesar Manrique.
 - In 2018 I graduated as a **Full Stack developer** with an average grade of 10 from a 2 year course in Cesar Manrique.
 
-## Work experience
+ ## Work experience
 
 I've worked in different organization since 2014:
 
@@ -69,7 +71,7 @@ I'm passionate of what I like to do, that's why I like to develop just for the p
 - [SeriesBeautifier](https://github.com/emimontesdeoca/SeriesBeautifier): SeriesBeautifier is a tool to clean and sort your multimedia storage.
 - [CanaryImages](https://github.com/emimontesdeoca/CanaryImages):  Small game built in Jquery UI to get known about the Canary Islands.
 - [shopping-list](https://github.com/emimontesdeoca/shopping-list): Minimalistic shopping list built with JavaScript using Bootstrap and localStorage. 
-
+ -->
 
 ## Socials
 
@@ -81,8 +83,8 @@ You can find me in different socials:
 - Github - [@emimontesdeoca](https://github.com/emimontesdeoca)
 - Stackoverflow - [emimontesdeoca](https://stackoverflow.com/users/7823470/emiliano-montesdeoca)
 - Stackoverflow ES - [emimontesdeoca](https://es.stackoverflow.com/users/82094/emiliano-montesdeoca)
-- Instagram - [@emimontesdeoca](https://www.instagram.com/emimontesdeoca/)
-- Facebook - [emimontesdeoca](https://www.facebook.com/emimontesdeocadelpuerto)
+<!-- - Instagram - [@emimontesdeoca](https://www.instagram.com/emimontesdeoca/)
+- Facebook - [emimontesdeoca](https://www.facebook.com/emimontesdeocadelpuerto) -->
 - Mail - [emontesdeoc@gmail.com](mailto:emontesdeoc@gmail.com)
 
 
