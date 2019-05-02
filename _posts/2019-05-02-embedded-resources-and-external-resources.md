@@ -9,51 +9,119 @@ keywords: "csharp"
 
 At work we came up with a normal problem that I'm pretty sure a lot of developers have to deal with, which is languages and custom languages from the clients that are giving our service to their clients. 
 
-When you develop a service or app that will be used by a lot of clients, they might be asking for customization in what is being shown for their clients, not what is being show but how is being shown.
-
-For example, maybe your services is more oriented to older people, so using the base langauge that is given to the client which will be given to their clients is too difficult for them to undestand or it has to be formal words, so this is where we have to work with. The solution is to update those words or phrases that people are not undestanding without losing the base resources.
+For example, let's say that the base language is using informal language and a client want formal languague because their clients are older people.
 
 Also note that this solutions is for several languages, we will be using English and Spanish.
 
 # Resources
 
-Resources are XML files that ends with `.resx` which have a key/value structure.
+Resources are XML files with extension `.resx` which have a key/value structure and they look like the following:
 
-We will be creating resources for two differente languages: english and spanish, so the nomenclature for the files will be: `resources.ISOLANGUAGECODE.resx`, for example: `resource.es.resx` for Spanish and `resource.resx` for english, in case we want to later add german, the file will be named `resource.de.resx`.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action_cancel" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Action_greeting" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+</root>
+```
+
+We will be creating resources for two differente languages: **english** and **spanish**, so the nomenclature for the files will be: `resources.ISOLANGUAGECODE.resx`, for example: `resource.es.resx` for Spanish and `resource.resx` for english, in case we want to later add german, the file will be named `resource.de.resx`.
 
 ## Embedded resource
 
-Embedded resources are XML files that are added inside the `dll` when it is compiled, you won't see them in the folder.
+Embedded resources, when the project is compiled, they will be added inside the `dll`.
 
-Here is a image with a embedded resource, as you can see, the file `Resource.resx` can't be seen in the compilation.
+Here is an image with a embedded resource, as you can see, the file `Resource.resx` can't be seen in the compilation.
 
 [![Image from Gyazo](https://i.gyazo.com/b696d4ff1129634477c0fe3d570a05e8.png)](https://gyazo.com/b696d4ff1129634477c0fe3d570a05e8)
 
 ## External resource
 
-On the other side the external resources or not embedded are resources that will be added to the folder when compiling.
+On the other side the external resources or not embedded are resources that will be added to the folder after compilation.
 
-The resource files (.resx) will be inside the `Properties` folder
+The resource files (`.resx`) will be inside the `Properties` folder
 
 [![Image from Gyazo](https://i.gyazo.com/db83dc7bb9e3d3fb521cb321eaa8e74a.png)](https://gyazo.com/db83dc7bb9e3d3fb521cb321eaa8e74a)
 
 # Building the project
 
-We start with a console project in .NET Framework, this can be done in different projects like ASP.NET and .NET Core.
+Let's start with a console project in .NET Framework.
 
 ## Creating the embedded resource file
 
-Let's just add a resource file with a few keys and be sure that it is embedded resource, which later will we using to update with external resources.
+Add a resource file with a few keys and be sure that it is embedded resource, which later will we using to update with external resources.
 
 [![Image from Gyazo](https://i.gyazo.com/79af1981a3ee3214089791a3511b94ba.png)](https://gyazo.com/79af1981a3ee3214089791a3511b94ba)
 
 ## Creating the external resource file
 
-In order to separate the external resource files, we will be adding the external resources inside a folder with a name so we can access them easily later.
+In order to separate the external resources from the embedded ones, we will be adding the external resources inside a folder with a name so we can access them easily later.
 
-*Tip: in order to add a folder inside the Properties, create it outside and move it inside*
+*Tip: to add a folder inside the Properties folder, create it outside and move it inside, Visual Studio doesn't let you create it*
 
-Let's do the same that we did for embedded resource, then go to `properties` of the file and inside `Advanced`, `Build action` and change it to: `Content` and change `Copy to Output Dictionary` to `Copy if newer`.
+Do the same that we did for embedded resource, then go to `properties` of the file and inside `Advanced`, `Build action` and change it to: `Content` and change `Copy to Output Dictionary` to `Copy if newer`.
 
 [![Image from Gyazo](https://i.gyazo.com/6f7d53c82760b6989d74dc1864bbc2d4.png)](https://gyazo.com/6f7d53c82760b6989d74dc1864bbc2d4)
 
@@ -63,7 +131,7 @@ This is how it should look like:
 
 ## Adding a key to app.config
 
-Because we are cool developers and like to have everything well done and NOT changing the code for each client, let's add a key to the appconfig that will have the name of the folder that we will be looking the resource files
+Because we are cool developers and like to have everything well done and **NOT** changing the code for each client, let's add a key to the ``appconfig`` that will have the name of the folder that we will be looking the resource files
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -77,7 +145,7 @@ Because we are cool developers and like to have everything well done and NOT cha
 </configuration>
 ```
 
-So later, when we will be looking for the resources, it will look in `Properties.John` instead of `Doe`. 
+So later, when we will be looking for the resources, it will look in `Properties.John` instead of `Properties.Doe`. 
 
 Also this makes it easier to change when the application is already deployed since you can change the app.config easily.
 
@@ -99,7 +167,7 @@ static void Main(string[] args)
 
 Running that it should show us something like this:
 
-`Hello value: Hola, Bye value: Adios`
+`Action_greeting value: Hello, Action_cancel value: Cancel`
 
 ## Accessing external resource files
 
@@ -118,9 +186,9 @@ var doebye = Properties.Doe.Resource.Action_cancel;
 
 # Problem
 
-The main problem using this method is that every key is a property inside the object, so we have to call it, like we saw before if you want to call the key `Action_greeting` of the resources file of `John` we have to use the following ` Properties.John.Resource.Action_greeting`. 
+The main problem using this method is that every key is a property inside the object, so we have to call it like we saw before. If you want to call the key `Action_greeting` of the resources file of `John` we have to use the following `Properties.John.Resource.Action_greeting`. 
 
-That's a bit uncomfortable for us as developers when we have more tha one resource file. 
+**Right there is the problem.**
 
 Thats because if we are developing an applicaiton for a a lot of clients, it's a bad idea to be change how we call the resource files for each of them. 
 
@@ -128,29 +196,27 @@ Thats because if we are developing an applicaiton for a a lot of clients, it's a
 
 # Solution
 
-The leader of our team thought of a pretty good method, something like a fallback, we must have a base model of resources, and then for each of the clients have a a resource file that will be updating the file with their resources, and we end up with a single list of resources.
+Our teamleader thought of a pretty good method, something like a fallback system, we must have a base model of resources, and then for each of the clients have a a resource file that will be updating the file with their resources, and we end up with a single list of resources. 
 
-To put this in a checklist, we have to:
+If the client doesn't want custom resources we use the base resources, and if they want them, we use theirs.
+
+To put this in a checklist, we have to do:
 - [ ] Find a way to map all the key/values to a dictionary for the embedded resources.
 - [ ] Find a way to map all the key/values to a dictionary for the external resources
 - [ ] Mix both files and have a single dictionary for each language
 - [ ] Create a method that access the dictionary and returns the value
 
+## Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/c7e9ae6c7792c3bace10ff9b3b2b08ee.png)](https://gyazo.com/c7e9ae6c7792c3bace10ff9b3b2b08ee)
+
 ## Let's code
 
-First of all, let's create a separated class where we will have all our logic, from getting the resource files, to mixing them and returning the value. That class will be called `CustomResources.cs`.
+First of all, let's create a separated class where we will have all our logic, from getting the resource files, to mixing them and returning the value. That class will be called `CustomResources`.
 
 This is what is looks like:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace resources_demo
-{
     class CustomResources
     {
 
@@ -186,8 +252,6 @@ namespace resources_demo
             ...
         }
     }
-}
-
 ```
 
 **Note that we are implementing Lazy loading for properties, which helps to increase the performance and makes it load the dictionary once.**
@@ -199,7 +263,7 @@ namespace resources_demo
 
 ## From embedded resource to dictionary
 
-We have to get all the properties from the xml file and return a dictionary, it's quite easy as you can see:
+We have to get all the properties from the xml file and return a dictionary:
 
 ```csharp
 private static Dictionary<string, string> GetDictionaryFromEmbedded(string embedded, string cultureInfoCode)
@@ -226,7 +290,7 @@ private static Dictionary<string, string> GetDictionaryFromEmbedded(string embed
 }
 ```
 
-Two **important** things:
+Two things:
 
 - Note that it needs a parameter called `embedded`, that parementers is the name of the file that you can see in the designer, in our case is: `resources-demo.Properties.Resource`. 
 
@@ -267,11 +331,11 @@ private static Dictionary<string, string> GetDictionaryFromFile(string file)
 }
 ```
 
-The file parameters needs to be filled with the location from the executable to the resource file, in our case is: `$"\\Properties\\John\\Resource.resx"`.
+The file parameters needs to be filled with the location from the executable to the resource file, in our case is: `"\\Properties\\John\\Resource.resx"`.
 
 ## Mixing dictionaries
 
-Well this is the easiest part here, remember to add `System.Configuration` to the references so you can access the `app.settings`.
+We are pretty much done, first, remember to add `System.Configuration` to the references so you can access `app.settings`.
 
 ```csharp
  private static Dictionary<string, string> OverwriteDictionary(Dictionary<string, string> currentDictionary, Dictionary<string, string> newDictionary, bool addIfDoesntExist = false)
@@ -299,7 +363,7 @@ Well this is the easiest part here, remember to add `System.Configuration` to th
 
 ## Getting text from the dictionary
 
-Let's create a public method that calls a private method which selects a language:
+Create a public method that calls a private method which selects a language:
 
 ```csharp
 private static string GetText(string key, string language)
@@ -340,8 +404,7 @@ public static string GetText(string key)
 
 ## Adding code to the properties getter
 
-Since we have all the methods necessary right now, we can modify the getter of the public lazy property to get the values.
-
+Since we have all the methods right now, we can modify the getter of the public property to get the values.
 
 ```csharp
 private static Dictionary<string, string> _ResourcesEnglish;
@@ -379,13 +442,17 @@ private static Dictionary<string, string> ResourcesSpanish
 }
 ```
 
-First we get the indentifier from the app.settings, then we get the base resources, the embedded ones. After that we get the custom resources and for that we need the folder name(which is the identifier), then we mix them and return the value.
+
+1. First we get the indentifier from the app.settings.
+2. Then we get the base resources, the embedded ones. 
+3. After that we get the custom resources and for that we need the folder name(which is the identifier).
+4. Then we mix them and return the value.
 
 All of this will be done once, ence the lazy loading.
 
 # Testing
 
-Everything is done, so now let's test it, in order to get a value from the dictionary we have to call the method `CustomResources.GetText(string key)` which returns the value.
+Everything related to code is finished, so now let's test it, in order to get a value from the dictionary we have to call the method `CustomResources.GetText(string key)` which returns the value.
 
 ## Updating entire resource files
 
@@ -393,11 +460,11 @@ This testing is a case when we want to update the entire key/value of the resour
 
 We will we testing `John`, and in order to set that we will have the app.config set to `<add key="CustomResources.Folder" value="John" />`.
 
-Now let's check our base resource file:
+Now let's check our base resource file (`Properties/Resource.es.resx`):
 
 [![Image from Gyazo](https://i.gyazo.com/26d6cef147ca3cdd93a1d6cc4c60c212.png)](https://gyazo.com/26d6cef147ca3cdd93a1d6cc4c60c212)
 
-And then our external resource file:
+And then our external resource file (`Properties/John/Resource.es.resx`):
 
 [![Image from Gyazo](https://i.gyazo.com/fd6582da0d6a427c2b21cc8b1999f9e0.png)](https://gyazo.com/fd6582da0d6a427c2b21cc8b1999f9e0)
 
@@ -483,7 +550,7 @@ First two values are from `resources.resx` which are in english and the last bot
 
 # That's it
 
-In this tutorial/blog we found a way to mix both embedded and external resources for laguages, this was a solution for a problem we had in the team and it's been running since then without any problems.
+In this tutorial we found a way to mix both embedded and external resources for laguages, this was a solution for a problem we had in the team and it's been running since then without any problems.
 
 You can check the source code [here](https://github.com/emimontesdeoca/resources-demo).
 
