@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Languages using embedded and external resources in the same project"
+title: "Custom languages using embedded and external resources in .NET Framework"
 description: "Working with embedded resources and external resrouces in the same project"
 comments: true
 keywords: "csharp"
@@ -12,6 +12,8 @@ At work we came up with a normal problem that I'm pretty sure a lot of developer
 For example, let's say that the base language is using informal language and a client want formal languague because their clients are older people.
 
 Also note that this solutions is for several languages, we will be using English and Spanish.
+
+*My mother language is not english si I apologize for any mistakes in the tutorial. If you find mistakes and want to fix them, you can open a pull request at [this repo](https://github.com/emimontesdeoca/emimontesdeoca.github.io) and I'll gladly aprove it!*
 
 # Resources
 
@@ -535,7 +537,7 @@ private static void WriteText(string key) {
 }
 ```
 
-Runnig this, the output should be something like this:
+Running this, the output should be something like this:
 
 ```
 [Culture: en-US] Key: Action_greeting -> value: Hello
