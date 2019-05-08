@@ -188,7 +188,7 @@ var doebye = Properties.Doe.Resource.Action_cancel;
 
 # Problem
 
-The main problem using this method is that every key is a property inside the object, so we have to call it like we saw before. If you want to call the key `Action_greeting` of the resources file of `John` we have to use the following `Properties.John.Resource.Action_greeting`. 
+The main problem using this method is that every key is a property inside the object, so we have to call it like we saw before. If you want to call the key `Action_greeting` of the resources file of `John` we have to use the following `Properties.John` and then `Resource.Action_greeting`. 
 
 **Right there is the problem.**
 
@@ -505,11 +505,11 @@ If you don't provide the external resource file, it doesn't matter at all becaus
 
 ## Missing pair in embedded resource
 
-If you have a pair in the external resource file, by default it will not add it to the final dictionary, you can change that by calling the method `OverwriteDictionary(Dictionary<string, string> currentDictionary, Dictionary<string, string> newDictionary, bool addIfDoesntExist = false)` when mixing both dictionaries and set the parameter `addIfDoesntExist` to `true`. 
+If you have a pair in the external resource file, by default it will not add it to the final dictionary, you can change that by calling the method `OverwriteDictionary()` when mixing both dictionaries and set the parameter `addIfDoesntExist` to `true`. 
 
 ## Different languages
 
-As you can see we didn't specified any language, because all of that is being done by the function `GetText(string key)` which is calling `GetText(string key, string language)`, and the parameter `language` is filled by `Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName` which returns the current language of our thread.
+As you can see we didn't specified any language, because all of that is being done by the function `GetText(string key)` which is calling `GetText(string key, string language)`, and the parameter `language` is filled by `TwoLetterISOLanguageName` which returns the current language of our thread.
 
 In my case I have spanish as the default language and that's why it always shows it in spanish, but we can try using english too.
 
