@@ -6,7 +6,7 @@ comments: true
 keywords: "tools"
 ---
 
-There's been times that I needed to show a client or a teammate a full screenshot of the current state of the website or even a part of it, si I've been using [Full Page Screen Capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en), for any other kind of screenshots, [Windows' Snippet tool](https://support.microsoft.com/en-us/help/13776/windows-use-snipping-tool-to-capture-screenshots) and now I'm in love with [Snaggit](https://www.techsmith.com/store/snagit). If I want to host it online like in this post [Gyazo](https://gyazo.com), which also has a GIF maker.
+There's been times that I needed to show a client or a teammate a full screenshot of the current state of the website or even a part of it, so I've been using [Full Page Screen Capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en) and, for any other kind of screenshots, [Windows' Snippet tool](https://support.microsoft.com/en-us/help/13776/windows-use-snipping-tool-to-capture-screenshots) or [Snaggit](https://www.techsmith.com/store/snagit). If I want to host it online like in this post [Gyazo](https://gyazo.com), which also has a GIF maker.
 
 Recently I found that **Devtools** has a tool that does a full-page screenshot, no extension needed!
 
@@ -57,7 +57,7 @@ Result:
 The `full size screenshot` will take a screenshot of the entire webpage, from start to bottom.
 
 [![Image from Gyazo](https://i.gyazo.com/e6c30b8eafbef04091bf66c16429017c.gif)](https://gyazo.com/e6c30b8eafbef04091bf66c16429017c)
-https://gyazo.com/5b936026735964bb789c4bcae02bb792
+
 
 Result:
 
