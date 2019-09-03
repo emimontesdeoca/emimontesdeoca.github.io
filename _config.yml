@@ -5,7 +5,7 @@ description   : "software engineer"
 keywords      : "software, hardware, engineer, coding, programming"
 url           : https://emimontesdeoca.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+cover         : "https://pbs.twimg.com/profile_images/1122088955133005824/PMTj2SLB_400x400.jpg" # image uri like logo/cover image for site seo
 
 google_analytics  : UA-125245336-4
 twitter_username  : "emimontesdeocaa"
