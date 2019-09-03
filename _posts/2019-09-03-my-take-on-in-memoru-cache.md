@@ -10,9 +10,11 @@ I've been working on some stuff that handled a big amount of data. While doing I
 
 So I thought that it would be useful to create a personal cache repository, of course this isn't new, a few weeks ago I read about this in StackOverflow's [post](https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/#in-memory--redis-cache) written by [Nick Craver](https://nickcraver.com/) about how they manage application cache.
 
-Also I've always wanted to work with cache, so why not.
+Also I've always wanted to work with cache, how does it work, the logic and how could I make it work, *so... why not!*
 
 ## Flow
+
+Here is a quick flow of how the class that has the control of the cache will behave when the user ask for a value.
 
 [![Image from Gyazo](https://i.gyazo.com/830d5a91089c3344c8b406c66ea547b8.png)](https://gyazo.com/830d5a91089c3344c8b406c66ea547b8)
 
