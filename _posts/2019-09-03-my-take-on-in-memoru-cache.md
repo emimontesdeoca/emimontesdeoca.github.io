@@ -6,7 +6,7 @@ comments: true
 keywords: "tutorial"
 ---
 
-I've been working on some stuff that handled a big amount of data. While managing the data I realized that some of it never changes, or at least for some fixed time, it doesn't.
+I've been working on some stuff that handled a big amount of data. While doing I realized that a big chunk of it never changes, or at least for some fixed time, it doesn't.
 
 So I thought that it would be useful to create a personal cache repository, of course this isn't new, a few weeks ago I read about this in StackOverflow's [post](https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/#in-memory--redis-cache) written by [Nick Craver](https://nickcraver.com/) about how they manage application cache.
 
@@ -44,25 +44,22 @@ public class CacheItem
 
 ### CacheRepository
 
-Then we need a class that handles the objects and saves them somewhere (as `CacheItem`) . I like to handle all the data/models in classes that has the sufix  `Repository`, but you dont have to, so let's build one.
+Then we need a class that handles the objects and saves them somewhere (as `CacheItem`). I like to handle all the data/models in classes that have the sufix `Repository`, *but you dont have to*, so let's build one for caching.
 
 ```csharp
 public class CacheRepository
 {
     private static Dictionary<string, string> Cache = new Dictionary<string, string>();
-
     private static T Set<T>(string key, Func<T> lookup, TimeSpan durationMinutes)
     {
         var item = new Models.Item(key, lookup(), durationMinutes);
         return Save<T>(key, item);
     }
-
     private static T Save<T>(string key, Item item)
     {
         Cache[key] = JsonConvert.SerializeObject(item);
         return (T)item.Value;
     }
-
     private static T Get<T>(string key)
     {
         var cached = Cache.FirstOrDefault(x => x.Key == key).Value;
@@ -71,7 +68,6 @@ public class CacheRepository
         ? default : (item.ValidUntil > DateTime.UtcNow) 
         ? JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(item.Value)) : default;
     }
-
     public static T GetOrSet<T>(string key, Func<T> lookup, TimeSpan durationMinutes)
     {
         var cache = Get<T>(key);
@@ -80,19 +76,21 @@ public class CacheRepository
 }
 ```
 
-So far we have a static dictionary called `Cache` where all the items will be stored. Remember that this will only last while the application is running, thus in-memory caching.
+So far we have a static dictionary called `Cache` where all the items will be stored. Remember that this will only last while the application is running, thus why this *tutorial* title has in-memory caching in it.
 
-Also keep in mind that the `Cache` item will be initialized once the `CacheRepository` class is loadad.
+*Keep in mind that the `Cache` item will be initialized once the `CacheRepository` class is loadad.*
 
 The only method available when invoking the CacheRepository class is `GetOrSet(string key, Func<T> lookup, TimeSpan durationMinutes)` that needs three parameters:
 
 1. `key`: the identifier of the object to save.
 2. `lookup`: the callback function in case the cache expired or it's null.
-3. `durationMinutes`: the duration in minutes which will be added to the current datetime.
+3. `durationMinutes`: the duration in minutes which will be added to the current time(in UTC).
 
 ## Time to cache
 
-Now, use our caching repository to get some data from somewhere. In order for all of this to make sense, let's create an example object with some properties, and then a repository to fetch and fill a list of that object.
+Now, use our caching repository to get some data from somewhere. 
+
+In order for all of this to make sense, let's create an example object with some properties, and then a repository to fetch and fill a list of that object.
 
 ```csharp
 public class User 
@@ -101,7 +99,6 @@ public class User
     public string Name { get; set; }
     public string Email { get; set; }
 }
-
 public class UserRepository 
 {
     public List<User> Get()
@@ -115,9 +112,7 @@ Since we have the method to fill a list of `User`, let's make use of the `CacheR
 
 ```csharp
 private UserRepository _userRepository = new UserRepository();
-
 private List<User> _user;
-
 public List<User> User
 {
     get
