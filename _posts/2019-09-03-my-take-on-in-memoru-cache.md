@@ -39,7 +39,7 @@ public class CacheItem
     {
         Identifier = identifier;
         Value = value;
-        ValidUntil = DateTime.Now.Add(valid);
+        ValidUntil = DateTime.UtcNow.Add(valid);
     }
 }
 ```

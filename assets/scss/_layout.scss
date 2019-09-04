@@ -71,7 +71,7 @@ hr {
 .site-header {
   border-bottom: 1px solid lighten($light-gray-color, 5%);
   margin-bottom: $small-spacing;
-  min-height: 80px;
+  min-height: 65px;
 }
 
 .intro {
@@ -114,6 +114,7 @@ hr {
   position: relative;
   padding: 0;
   pointer-events: all;
+  margin-top: 8px;
   cursor: pointer;
 
   li {
