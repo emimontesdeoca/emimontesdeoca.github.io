@@ -8,9 +8,6 @@ Hello! My name is Emiliano,
 
 I'm a full stack developer based on Tenerife, Spain. I do enjoy coding as a hobby and as a work, but the best part of coding is using it with my keyboards. I'm a proud owner of different IBM Model M, Topre's HHKB and many more keyboards.
 
-Also I'm a proud member of the PCMR.
-
-You can find my resume in spanish [here](https://drive.google.com/open?id=1idOWXUlALiJ6VXLn-pBlxboxDwjZFGv-).
 
 
 <!--
