@@ -27,6 +27,7 @@ body {
 
 body {
     background-color: $base-background-color;
+    font-family: 'Merriweather', 'Georgia', serif;
 }
 
 hr {
@@ -120,6 +121,7 @@ hr {
 
 .category-title {
     margin: 1em 0 0.5em 0;
+    font-family: 'Montserrat', sans-serif;
     &:first-child {
         margin-top: 0;
     }
