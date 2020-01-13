@@ -1,13 +1,9 @@
-# Thinkspace
+# Emi
 
-> Thinkspace is just another minimalist Jekyll theme which designed for technical writing blog.
+[![Image from Gyazo](https://i.gyazo.com/a835b6c7a9b97d48eab0e2c4c6d2fd32.png)](https://gyazo.com/a835b6c7a9b97d48eab0e2c4c6d2fd32)
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-2.5-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/thinkspace.svg?branch=master)
+[![Build Status](https://travis-ci.org/emimontesdeoca/emimontesdeoca.github.io.svg?branch=master)](https://travis-ci.org/emimontesdeoca/emimontesdeoca.github.io)
 
-- **Demo:** https://heiswayi.github.io/thinkspace/
+This is the repostory of my personal blog.
 
-![SCREENSHOT](https://i.imgur.com/1YS078k.png)
-
-## License
-
-[MIT](LICENSE.md)
+[Link](https://emimontesdeoca.github.io/)
