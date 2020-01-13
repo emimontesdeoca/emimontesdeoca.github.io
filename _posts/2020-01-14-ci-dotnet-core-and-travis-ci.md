@@ -202,13 +202,13 @@ namespace ConsoleCalculator.CLI
 
 We will be using this application from command like, so in order to make it work, we have to call it passing some parameters. For example:
 
-```cmd 
+```bash 
 ConsoleCalculator.CLI.exe -op + -l 10 -r 20
 ```
 
 Which translates to:
 
-```cmd 
+```bash 
 ConsoleCalculator.CLI.exe -operator + -leftValue 10 -rightValue 20
 ```
 
@@ -216,7 +216,7 @@ The code for that is pretty simple, if it doesn't match a certain regex pattern,
 
 That means, if we call it like this:
 
-```cmd 
+```bash 
 ConsoleCalculator.CLI.exe -operator + -leftValue asdfg -rightValue ghjk
 ```
 
@@ -532,7 +532,7 @@ As expected, it failed for the `ShouldAdd` case:
 Now make a commit of this change and push it to master, and wait for the results from the TravisCI agent.
 
 
-```cmd
+```bash
 git add --all
 git commit -m "Breaking changes"
 git push
