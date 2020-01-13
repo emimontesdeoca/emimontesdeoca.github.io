@@ -1,6 +1,4 @@
-language: ruby
-rvm:
-  - 2.6
+language: generic
 
 # branch whitelist, only for Github pages
 # https://jekyllrb.com/docs/continuous-integration/travis-ci/

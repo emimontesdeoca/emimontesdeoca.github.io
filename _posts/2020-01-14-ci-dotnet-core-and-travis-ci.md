@@ -6,15 +6,17 @@ comments: true
 keywords: "tutorial"
 ---
 
-This last weekdend I decided that I wanted to properly start my scraper-checker-downloader project that I've been doing in different repositories. 
+This last weekeend I decided that I wanted to properly start my scraper-checker-downloader project that I've been doing in different repositories. 
 
-After starting yet another project, this had to be cool, like real cool, using CI/CD, pull request, documentation, badges in readme, everything that I've seen that it's cool.
+After starting yet another project, this had to be cool, **like real cool**, using CI/CD, pull request, documentation, badges in readme, everything that I've seen that it's cool and indeed are the best practices.
 
-And after a good weekend I ended up creating [Dramarr](https://github.com/Dramarr), a set of tools tah scrap and download shows from different sources. It has different repositories in the organization and most of them are libraries that are being compiled, tested and deployed themselves in the pull request and when they're merged in the master branch. 
+And after a good weekend I ended up creating [Dramarr](https://github.com/Dramarr), a set of tools that scrap and download shows from different sources. 
+
+It has different repositories in the organization and most of them are libraries that are being compiled, tested and deployed themselves in the pull request and when they're merged in the master branch. 
 
 That is what it's called CI/CD or continuous intregration/continuous delivery.
 
-But for this post we are just going to talk about CI.
+But for this tutorial we are just going to talk about CI.
 
 # Continuous integration
 
@@ -22,13 +24,12 @@ But for this post we are just going to talk about CI.
 
 Taken from Martin Fowler's [blog](https://martinfowler.com/articles/continuousIntegration.html), which is the best explanation that I've read:
 
-
 >Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. 
-Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.
+>Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.
 
 ## Tools
 
-There are many tools to integrate your workflow with CI/CD, but for this tutorial we'll be using [Github](https://github.com/) to store our code and the [TravisCI](https://travis-ci.org/) tools to setup the CI.
+There are many tools to integrate your workflow with CI/CD, but for this tutorial we'll be using [Github](https://github.com/) to store our code and the [TravisCI](https://travis-ci.org/) tools to setup the CI. Regarding the language and frameworks, we will use C# and the new.NET Core 3.0.
 
 # Requirements
 
@@ -40,13 +41,13 @@ In order to make this work you three simple things:
 
 # Project
 
-For the sake of this tutorial, we will be doing a simple Calculator written in .NET Core 3.0. We will be creating a library, a command line tool and a testing project to test everything.
+For the sake of this tutorial, we will be doing a simple Calculator. We will be creating a library, a command line tool and a testing project to test everything.
 
 This testing project will also be running when we set up the CI, meaning that if in the future we make a change to the code and the tests that we initially created are not passing, we will be getting a notification or we could simply reject the pull request.
 
 ## Creating the Github repository
 
-First, we will be creating a Github repository, so reach over to Github and create the repository and the clone it to your local environment. I decided to call this new repository "CalculatorCLI-demo".
+First, we will be creating a Github repository, so reach over to Github and create the repository and the clone it to your local environment. I decided to call this new repository `CalculatorCLI-demo`.
 
 <img align="center" src="https://i.gyazo.com/0657eb2bdeb3c331b9e4585d7deed5ef.png" >
 
@@ -358,6 +359,11 @@ namespace CalculatorCLI.Tests
 
 ```
 
+With everything created we will end up with a solution like this:
+
+<img align="center" src="https://i.gyazo.com/ffecc23a14d796af9a46dbb390c0d072.png" />
+
+
 And with this we can now run the Tests, so go to the `Test Explorer` in the Visual Studio and run them!
 
 <img align="center" src="https://i.gyazo.com/17d7ac9b2f1e7fb2666a68fc87882eed.png" />
@@ -377,7 +383,7 @@ In order to do this, login to the Travis CI page and go to your repositories, th
 
 ## Create .travis.yml
 
-We need to create a file called `.travis.yml` in the root of you project, this is because [as stated in the documentatin](https://docs.travis-ci.com/user/tutorial/):
+We need to create a file called `.travis.yml` in the root of you project, this is because [as stated in the documentation](https://docs.travis-ci.com/user/tutorial/):
 
 > Travis only runs builds on the commits you push after you’ve added a .travis.yml file.
 
@@ -557,9 +563,9 @@ And build is also a success:
 
 # Conclusion
 
-It's really quite powerful, CI and CD have existed since long time ago, but now it's pretty simple to make it run in everyt single project that you want to do.
+**It's really quite powerful**, CI and CD have existed since long time ago, but now it's pretty simple to make it run in every single project, it doesn't matter how small or simple it is.
 
-From my point of view, everyone should at least set up CI for each of their projects, because it's a good practise and it will eventually save you time debugging and finding error that shouldn't occurr if you hade set `tests` and CI.
+From my point of view, everyone should at least set up CI for each of their projects, because it's a good practice and it will eventually save you time debugging and finding error that shouldn't occurr if you had set proper `tests` and CI.
 
 # That's it
 
