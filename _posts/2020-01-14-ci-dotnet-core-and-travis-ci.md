@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Continuous integration for a.NET Core 3.0 project using TravisCI"
+title: "Continuous integration for a .NET Core 3.0 project using TravisCI"
 description: ".NET Core 3.0 project with CI using TravisCI"
 comments: true
 keywords: "tutorial"
@@ -33,7 +33,7 @@ There are many tools to integrate your workflow with CI/CD, but for this tutoria
 
 # Requirements
 
-In order to make this work you three simple things:
+In order to make this work you need three simple things:
 
 1. Latest version of Visual Studio 2019
 2. Github account
