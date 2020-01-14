@@ -27,7 +27,6 @@ body {
 
 body {
     background-color: $base-background-color;
-    font-family: 'Merriweather', 'Georgia', serif;
 }
 
 hr {
@@ -41,7 +40,7 @@ hr {
     padding: $base-spacing;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 1000px;
     font-weight: normal;
 }
 
@@ -90,9 +89,10 @@ hr {
     margin: 0 0 1em 0;
     cursor: pointer;
     letter-spacing: 0.8px;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 28px;
-    font-weight: 300;
+    font-weight: 700;
+    margin-top: -5px;
     span {
         font-weight: 700;
     }
@@ -143,6 +143,7 @@ hr {
         padding: 0 0.2em;
         margin-left: 1em;
         margin-top: 2px;
+        font-family: Arial, Helvetica, sans-serif;
         @extend .pull-right;
     }
 }
@@ -245,6 +246,13 @@ hr {
     border-top: 0.2em solid lighten($light-gray-color, 13%);
     margin-bottom: $base-spacing * 2;
     margin-top: $base-spacing * 2;
+}
+
+.picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-top: -14px;
 }
 
 // This applies from 0px to 600px

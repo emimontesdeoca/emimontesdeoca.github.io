@@ -45,6 +45,7 @@ p {
     &.lead {
         font-size: rem(22);
         font-weight: 300;
+        text-align: center;
     }
 }
 
@@ -65,6 +66,10 @@ hr {
     border-right: 0;
     border-top: 0;
     margin: $base-spacing 0;
+}
+
+time {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img,
