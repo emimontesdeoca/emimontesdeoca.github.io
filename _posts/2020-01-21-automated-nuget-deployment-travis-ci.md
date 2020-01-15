@@ -126,7 +126,7 @@ dotnet nuget push ./CalculatorCLI/CalculatorCLI.Core/bin/Release/*.nupkg -s "htt
 
 Now that we have the source code updated, we know the commands that we need to use, we need to integrate our continuous delivery with continuous integration. With that  we don't really have to do anything but code, test, review and push.
 
-What we are going to do now is the following:
+What we are going to do now, to the `.travis.yml` file, is the following:
 
 1. Add different `stages`
 2. Each `stage` depends on the branch
