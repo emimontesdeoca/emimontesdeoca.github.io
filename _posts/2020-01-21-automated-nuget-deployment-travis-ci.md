@@ -22,9 +22,9 @@ Now we are going to use a new set of commands!
 
 ## `dotnet nuget`
 
-You can chech the documentation for this set of tools right [here](https://docs.microsoft.com/en-gb/nuget/reference/dotnet-commands), but a briefly explanation:
+You can check the documentation for this set of tools right [here](https://docs.microsoft.com/en-gb/nuget/reference/dotnet-commands), but a briefly explanation:
 
-`dotnet nuget` is a set of essentials tools that include installing, restoring, removing and publishing packages.
+> `dotnet nuget` is a set of essentials tools that include installing, restoring, removing and publishing packages.
 
 # NuGet feed
 
