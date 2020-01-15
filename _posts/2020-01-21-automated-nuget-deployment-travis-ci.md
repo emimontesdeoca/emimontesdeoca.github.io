@@ -114,10 +114,10 @@ dotnet test ".\CalculatorCLI\CalculatorCLI.sln" -c Release -v n
 #!/bin/sh
 
 echo "Packing..."
-dotnet pack ".\CalculatorCLI\CalculatorCLI.Core\CalculatorCLI.Core.csproj" -c Release
+dotnet pack ./CalculatorCLI/CalculatorCLI.Core/CalculatorCLI.Core.csproj -c Release
 
 echo "Pushing..."
-dotnet nuget push ".\CalculatorCLI\CalculatorCLI.Core\bin\Release\*.nupkg" -k $NUGET_API_KEY -s "https://www.nuget.org/"
+dotnet nuget push ./CalculatorCLI/CalculatorCLI.Core/bin/Release/*.nupkg -s "https://nuget.org" -k $NUGET_API_KEY
 
 ```
 
