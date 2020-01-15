@@ -6,13 +6,19 @@ comments: true
 keywords: "tutorial"
 ---
 
-Recently I did a [tutorial](https://emimontesdeoca.github.io/2020/ci-dotnet-core-and-travis-ci/) on how to use Travis CI as a tool to automatically test your code that you just pushed, force it to be compiled and tested and finally report you the status of that change.
+Recently I did a [tutorial](https://emimontesdeoca.github.io/2020/ci-dotnet-core-and-travis-ci/) on how to use Travis CI as a tool to automatically test your code that you just pushed or trying to push to `master` branch. Making it to be compiled and tested and finally report you the status of that change.
 
 [![Image from Gyazo](https://i.gyazo.com/e4c3f9019fdb8a8d80b2649f4c4bbbde.png)](https://gyazo.com/e4c3f9019fdb8a8d80b2649f4c4bbbde)
 
-But we can easily keep making it better, for example, the core library that was made on that last tutorial, I want to make it public using the [NuGet](https://www.nuget.org/) feed, so everyone can make easy operation in their libraries!
+But we can keep making it **better**, for example, the core library that was made on that last tutorial, I want to make it public using the [NuGet](https://www.nuget.org/) feed, so everyone can make easy operation in their libraries!
 
-But how? How are we going to compile, test and then publish that package into the feed for everyone to download it in their projects?
+**But how?** How are we going to compile, test and then publish that package into the feed for everyone to download it in their projects?
+
+Well, that's this tutorial for 😁!
+
+# What's new?
+
+There's almost no changes regarding the code, the things that we need to change are packing, publication and then how we can automate it.
 
 # .NET Core CLI
 
@@ -20,7 +26,7 @@ We are going to use the [.NET Core CLI](https://docs.microsoft.com/en-gb/dotnet/
 
 Now we are going to use a new set of commands!
 
-## `dotnet nuget`
+# `dotnet nuget`
 
 You can check the documentation for this set of tools right [here](https://docs.microsoft.com/en-gb/nuget/reference/dotnet-commands), but a briefly explanation:
 
@@ -30,15 +36,17 @@ You can check the documentation for this set of tools right [here](https://docs.
 
 [NuGet is the package manager for .NET](https://www.nuget.org/). The NuGet client tools provide the ability to produce and consume packages. The NuGet Gallery is the central package repository used by all package authors and consumers.
 
-NuGet is free, so you can sign up and pick up your API key and start uploading packages. They will be uploaded, verified and then listed for everyone.
+NuGet is free, so you can sign up and pick up your API key and start uploading packages. They will be uploaded, verified and then listed for **everyone**.
 
-## Get the API key
+# Get the API key
 
 In order to upload your package you will need to get your API key after the sign up, so go the [API keys page](https://www.nuget.org/account/apikeys) and create a new one.
 
 [![Image from Gyazo](https://i.gyazo.com/7509632471a35fb6b5b909699dec2520.png)](https://gyazo.com/7509632471a35fb6b5b909699dec2520)
 
-Keep in mind that the API key has an expiration fo 365 days. Then copy your key and store somewhere, as said in the page, you won't be able to see it again, and if you didn't save it you'll have to regenerate it.
+**Keep in mind that the API key has an expiration of 365 days.**
+
+Then copy your key and store it somewhere, as said in the page, you won't be able to see it again, and if you didn't save it you'll have to regenerate it.
 
 [![Image from Gyazo](https://i.gyazo.com/2feb401c84034706d12a59f03bd30136.png)](https://gyazo.com/2feb401c84034706d12a59f03bd30136)
 
@@ -106,10 +114,10 @@ dotnet test ".\CalculatorCLI\CalculatorCLI.sln" -c Release -v n
 #!/bin/sh
 
 echo "Packing..."
-dotnet pack ".\CalculatorCLI\CalculatorCLI.sln" -c Release
+dotnet pack ".\CalculatorCLI\CalculatorCLI.Core\CalculatorCLI.Core.csproj" -c Release
 
-echo "Pusing..."
-dotnet nuget push ".\CalculatorCLI\CalculatorCLI.sln\CalculatorCLI.Core\bin\Release\*.nupkg" -k $NUGET_API_KEY -s "https://www.nuget.org/"
+echo "Pushing..."
+dotnet nuget push ".\CalculatorCLI\CalculatorCLI.Core\bin\Release\*.nupkg" -k $NUGET_API_KEY -s "https://www.nuget.org/"
 
 ```
 
@@ -122,10 +130,12 @@ What we are going to do now is the following:
 
 1. Add different `stages`
 2. Each `stage` depends on the branch
-3. If your build is on master, it means that the package must be updated, there fore we are going to push our package to the NuGet feeds
-4. If you build is on a pull request, we won't still are going to check if the build compiles and test, but we are not going to publish it.
+3. If your build is on master, it means that the package must be updated, therefore we are going to push our package to the NuGet feeds
+4. If you build is a pull request, we still are going to check if the build compiles and test, but we are not going to publish it.
 
 ## Stages
+
+From their documentation:
 
 >You can filter out and reject builds, stages and jobs by specifying conditions in your build configuration (your .travis.yml file).
 
@@ -157,7 +167,9 @@ jobs:
       script: bash scripts/push.sh
 ```
 
-As you can see we have three different stages `compile`, `test` and `push`, which the last one only is going to run when the `branch` is `master`.
+As you can see we have three different stages `compile`, `test` and `push`, which the last one only is going to run when the `branch` is `master` and it's not a `pull request` to it, only a `push`.
+
+If you don't undestand about this, just go into the documentation and it's explained quite easy.
 
 With that in mind, all the `pull request` won't be pushing anything to the NuGet feed.
 
@@ -167,11 +179,11 @@ Go to your repository build's settings and add a new environment variable, calle
 
 [![Image from Gyazo](https://i.gyazo.com/68a4bcc4ce57eccd6bb25b7d62901c84.png)](https://gyazo.com/68a4bcc4ce57eccd6bb25b7d62901c84)
 
-# Create a `pull request`
+## Create a `pull request`
 
 Now that we have everything set up, it's time to make a `pull request` and check if the compilation for that pull request is ignoring out last `stage`.
 
-# Check the builds
+## Check the builds
 
 Right as you make the pull request, a build will be queued in the TravisCI dashboard, and as you can see that we have 2 different builds there and not three.
 
@@ -181,13 +193,19 @@ Now let's accept the `pull request` and check the build again to see that we now
 
 [![Image from Gyazo](https://i.gyazo.com/46dad20d00defb8c14279332a946e73e.png)](https://gyazo.com/46dad20d00defb8c14279332a946e73e)
 
-And as soon as you can see the build being queued, you can see the three jobs including the `Deoply-prod` at the end.
+And as soon as you can see the build being queued, you can see the three jobs including the `Deploy-prod` at the end.
+
+[![Image from Gyazo](https://i.gyazo.com/d24344e42f2b45225acb618ac030fd8f.png)](https://gyazo.com/d24344e42f2b45225acb618ac030fd8f)
+
+As soon as this entire build complete, you can see in the logs that the package has been pushed to the sources.
+
+[![Image from Gyazo](https://i.gyazo.com/77b1e44b4f9059cb7266fb18fbace8a7.png)](https://gyazo.com/77b1e44b4f9059cb7266fb18fbace8a7)
 
 
+And obviously you can see it in the NuGet page
 
-As soon as this entire build complete, you can check in the NuGet page that you package is there.
+[![Image from Gyazo](https://i.gyazo.com/09421094730ea2e087cc5da639069ec4.png)](https://gyazo.com/09421094730ea2e087cc5da639069ec4)
 
-
-
+[![Image from Gyazo](https://i.gyazo.com/a7905ddfd6665bb6e8e62e160f21630d.png)](https://gyazo.com/a7905ddfd6665bb6e8e62e160f21630d)
 
 
