@@ -209,3 +209,10 @@ And obviously you can see it in the NuGet page
 [![Image from Gyazo](https://i.gyazo.com/a7905ddfd6665bb6e8e62e160f21630d.png)](https://gyazo.com/a7905ddfd6665bb6e8e62e160f21630d)
 
 
+# That's it
+
+In this tutorial we found out about how to automate our NuGet package delivery. We used some tools like `TravisCI`, `stages` and `dotnet nuget`.
+
+In my opinion, even if it's something that would take time to set up properly and could be way too complex in some cases. Investing time in this kind of techniques in order to leave everything perfect and automated worth it. 
+
+You can find the source code, with the `.travis.yml` file right [here](https://github.com/emimontesdeoca/CalculatorCLI-demo), if you have any questions feel free to contact me on my [twitter](https://twitter.com/emimontesdeocaa)!
