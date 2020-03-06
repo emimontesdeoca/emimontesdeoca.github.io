@@ -8,7 +8,7 @@ keywords: "tutorial"
 
 I've been in the need of converting an Excel files with its own defined columns to a new one with dynamic columns, and I was kinda confused on how to do it properly without some serious performance issues.
 
-I came up to a [tutorial](https://www.oreilly.com/content/building-c-objects-dynamically/) that you can find here which uses .NET [ExpandoObject](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.expandoobject?view=netframework-4.8) which pretty much lets you create an object and add dynamic memebers.
+I came up to a tutorial that you can find [here](https://www.oreilly.com/content/building-c-objects-dynamically/) that uses .NET [ExpandoObject](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.expandoobject?view=netframework-4.8) which pretty much lets you create an object and add dynamic memebers.
 
 ## ExpandoObject
 
@@ -77,7 +77,7 @@ Since what we are doing right know is using all the properties of the `ExcelItem
 
 Also a requirement is that I don't want to be changing the code, eveything should be done by the `administrator`, who will decide which columns should be shown, and he may or may not know the properties in the code.
 
-TLDR: everything should be dynamic, we have an object with properties and we must make sure that the generated file have `N` properties of that object, but not decided in the code.
+TLDR: everything should be dynamic, we have an object with properties and we must make sure that the generated file have `N` properties of that object, but obviously not hardcoded.
 
 ## Dynamic columns
 
@@ -98,6 +98,8 @@ Id    PropertyName
 ```
 
 Note that we have less values that the existing properties of the `ExcelItem` object, with it having `6` properties and we only having `3` listed on the database.
+
+Also note that the `PropertyName` must match the property name of the object that I'll use for the dynamic assignment.
 
 ## Building the object
 
