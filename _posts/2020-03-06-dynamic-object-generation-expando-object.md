@@ -165,5 +165,13 @@ Id    TemplateId    PropertyName
 9     2             Age
 ```
 
-Then by getting the template you could have different columns, all dynamically and no code related. IF we have an user with the role of `Admins`, the file will contain columns `Id`, `Name`, `Surname`, `Age`, `CreatedAt`, `UpdatedAt`. In the case if you generate it using the `Users` role, it will have `Name`, `Age`. `Surname`.
+Then by getting the template you could have different columns, all dynamically and no code related. 
+
+If we have an user with the role `Admins`, the file will contain columns `Id`, `Name`, `Surname`, `Age`, `CreatedAt`, `UpdatedAt`. 
+
+In the case if you generate it using the `Users` role, it will have `Name`, `Age`. `Surname`.
+
+## Conclusion
+
+This is a cool way of learing how the `dynamic` works in .NET, and it's a really good solution when you need to have different roles or templates for different users, and not really interested on investing time hardcoding stuff.
 
