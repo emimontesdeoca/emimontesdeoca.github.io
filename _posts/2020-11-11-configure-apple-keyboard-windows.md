@@ -31,16 +31,16 @@ In order to make it work, I had to read a lot from the web, but these two links 
 
 Some of this steps are from the documentation noted before:
 
-1. Install 7zip (https://www.7-zip.org/) to your computer if you don't have it.
-2. Install Python (version 2.x) (https://www.python.org/downloads/) to your computer if you don't have it.
+1. Install [7zip](https://www.7-zip.org/) to your computer if you don't have it.
+2. Install [Python (version 2.x)](https://www.python.org/downloads/) to your computer if you don't have it.
      * IMPORTANT: The latest version of the Python is 3.x. But, you need version 2.x because the brigadier script is not compatible with version 3.x.
      * (option) The installer, by default, doesn't add python.exe to your PATH. If you want, you need to enable this option. (see the screenshot on the right)
-If you already have another version of Python, you probably don't want to enable this option.
+    * If you already have another version of Python, you probably don't want to enable this option.
 3. Download brigadier (a Python script that helps you to download the latest Boot Camp version).
 4. Please right-click the following link and save the file using "Save link as...". https://raw.githubusercontent.com/timsutton/brigadier/master/brigadier
 5. Open command prompt window (aka. DOS box) and change directory to where you downloaded the brigadier script.
 6. Assuming the brigadier script was saved as “brigadier.txt”, please run the following command:
-7. If Python version 2.x is in your PATH: python brigadier.txt --model=MacBook13,2
+    *  If Python version 2.x is in your PATH: python brigadier.txt --model=MacBook13,2
     * Otherwise: [Path to the Python version 2.x]\python.exe brigadier.txt --model=MacBook13,2
 8. It will download a big bundle with all the drivers from bootcamp
 9. Create a folder called `BootCamp` and copy the `BootCamp-xxx-yyyyyy\BootCamp\Drivers\Apple\BootCamp.msi` and  `BootCamp-xxx-yyyyyy\BootCamp\Drivers\Apple\AppleKeyboardMagic2` into it.
