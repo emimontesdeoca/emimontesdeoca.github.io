@@ -17,8 +17,8 @@ If you pair the keyboard, you will recognize a few things:
 
 In order to make it work, I had to read a lot from the web, but these two links are the ones that helped me to make it work:
 
-* (Make full use of Apple Magic Keyboard/Mouse/Trackpad on Windows)[https://www.bluetoothgoodies.com/info/apple-devices/]
-* (How do I use my f-1 - f12 keys without pressing FN on Windows 7 using bootcamp on a Macbook Pro?)[https://superuser.com/questions/82826/how-do-i-use-my-f-1-f12-keys-without-pressing-fn-on-windows-7-using-bootcamp-o] 
+*  [Make full use of Apple Magic Keyboard/Mouse/Trackpad on Windows](https://www.bluetoothgoodies.com/info/apple-devices/)
+* [How do I use my f-1 - f12 keys without pressing FN on Windows 7 using bootcamp on a Macbook Pro?](https://superuser.com/questions/82826/how-do-i-use-my-f-1-f12-keys-without-pressing-fn-on-windows-7-using-bootcamp-o) 
 
 ## Installing the Apple Keyboard driver
 
@@ -57,7 +57,7 @@ In order to fix this, I found a solution, noted in the documentation section, th
 
 ### Update keys mapping
 
-If you have a problem with the mappings, you can use (https://www.randyrants.com/category/sharpkeys/)[SharpKeys] and update them.
+If you have a problem with the mappings, you can use [https://www.randyrants.com/category/sharpkeys/](SharpKeys) and update them.
 
 I had to update the `Windows`, `alt`, `º` and `<>` keys.
 
