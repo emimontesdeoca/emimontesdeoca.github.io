@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding compiled libraries in the nuget package"
+title: "Adding compiled libraries to a NuGet package"
 description: "How to add compiled libraries in the nuget package so we are not getting null reference exceptions"
 comments: true
 keywords: "tutorial"
