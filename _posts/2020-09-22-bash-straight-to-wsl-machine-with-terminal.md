@@ -18,7 +18,7 @@ Now if you fire up the terminal and open a new tab to load your WSL distro, it l
 
 [![Image from Gyazo](https://i.gyazo.com/dac1264f7b8dbae1f64e769b64c551da.png)](https://gyazo.com/dac1264f7b8dbae1f64e769b64c551da)
 
-This is not really an issue, because if you just do `cd ~` it just loads the distro user foder. 
+This is not really an issue, because if you just do `cd ~` it just loads the distro user folder. 
 
 The thing is that I don't want to do it again and again so let's update a file to do it by itself.
 
@@ -31,3 +31,5 @@ Add `cd ~` at the end of the file before the last instruction.
 [![Image from Gyazo](https://i.gyazo.com/b601aba59b9e877bc3926ab9ceb2b98c.png)](https://gyazo.com/b601aba59b9e877bc3926ab9ceb2b98c)
 
 Save, reopen the WSL console with the terminal and you should be on the profiles folder.
+
+Keep in mind that you'll have to do this for all your WSL installations, since we are updating the `bashrc` file for a single one.
