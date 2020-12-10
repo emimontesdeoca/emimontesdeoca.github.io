@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Overriding the core bundles of Pimcore"
-description: "Learn how to override controllers and javascript in Pimcore"
+title: "Overriding a core controller of Pimcore"
+description: "Learn how to override controllers in Pimcore"
 comments: true
 keywords: "tutorial"
 ---
@@ -9,15 +9,17 @@ keywords: "tutorial"
 
 I've been working on a Pimcore project for some time now, never touched PHP and Symfony in my life so it's been a great challenge.
 
-The documentation is great, I mean, seriously it's great, but looks like it's not made for beginners on the langauge/framework so everything that I've done I had to document it.
+The documentation is great, I mean, seriously it's great, but looks like it's not made for beginners on the langauge/framework so everything that I've done I had to takes notes of it.
+
+[![Image from Gyazo](https://media.giphy.com/media/g4jDE1JnpUNaw/giphy.gif)](https://media.giphy.com/media/g4jDE1JnpUNaw/giphy.gif)
 
 After learning that you can extend Pimcore by using bundles, I've spent hours and hours trying to override controllers, javascript methods and more stuff. 
 
-So in this post I'll explain how I've managed to override controller and Javascript methods.
+So in this post I'll explain how I've managed to override a controller. How to override javascript files will come later 😎.
 
 # Creating the bundle
 
-First of all we need to create a bundle for it, it's pretty simple as its docuemented on the [Pimcore documentation](https://pimcore.com/docs/pimcore/current/Development_Documentation/Extending_Pimcore/Bundle_Developers_Guide/index.html), we just need to run `bin/console pimcore:generate:bundle --namespace=EmiDemo/EmiDemoBundle` on the project folder.
+First of all we need to create a bundle for it, it's pretty simple as its documented on the [Pimcore documentation](https://pimcore.com/docs/pimcore/current/Development_Documentation/Extending_Pimcore/Bundle_Developers_Guide/index.html), we just need to run `bin/console pimcore:generate:bundle --namespace=EmiDemo/EmiDemoBundle` on the project folder.
 
 It will prompt some questions but nothing to worry about.
 
@@ -33,7 +35,7 @@ Also, the plugin will be detected by the Pimcore admin site, but it will be disa
 
 # Overriding a method from a controller
 
-For overriding a method in a controller, first obviously you need to find the action that you want to update, this seems easy but I'll give you the way I usually do.
+For overriding a method in a controller, first obviously you need to find the action that you want to update, this seems easy but I'll give you the way I usually do (learnt from my teammate [Cesar](https://twitter.com/cesabreu)).
 
 First go into the page that you think the controller takes action, in my case I want to check the one that loads when we open an asset
 
@@ -117,33 +119,20 @@ Then we will just copy the method from the core controller, and, in our case, up
 
 [![Image from Gyazo](https://i.gyazo.com/dcdd9f8166e4ba8820cb8e285c43dec8.png)](https://gyazo.com/dcdd9f8166e4ba8820cb8e285c43dec8)
 
-If you remember, we have a message in the corre controller already: `Overriding the getDataByIdAction in the core!!` and now we should be seeing `Overriding the getDataByIdAction in the bundle!!`
+If you remember, we have a message in the core controller already: `Overriding the getDataByIdAction in the core!!` and now we should be seeing `Overriding the getDataByIdAction in the bundle!!`
 
 [![Image from Gyazo](https://i.gyazo.com/8e16b1de2a40292c843c51576acf43c4.png)](https://gyazo.com/8e16b1de2a40292c843c51576acf43c4)
 
 Let's just not return anything and see that we can now see the page like it was before
 
-[![Image from Gyazo](https://i.gyazo.com/3dba53d972cff00fd16099759a297e01.png)](https://gyazo.com/3dba53d972cff00fd16099759a297e01)
+[![Image from Gyazo](https://i.gyazo.com/dda8df5f6d721f5ba25d6a056ac7f9bf.png)](https://gyazo.com/dda8df5f6d721f5ba25d6a056ac7f9bf)
+
+Comment out the return statement and reload
 
 [![Image from Gyazo](https://i.gyazo.com/2fdbff7f45c38fb2bc56a3fc73661077.png)](https://gyazo.com/2fdbff7f45c38fb2bc56a3fc73661077)
 
 ## That's it
 
-And with this little demo you can see how easy you can override an existing Pimcore core controller.
+And with this little demo you can see how easy you can override an existing Pimcore core controller. There are some steps that you have to follow but it's nothing hard. Just make sure you expose the controller and clear the cache from time to time while you are making changes, sometimes it get cached and you are stuck thinking it's not working and it's just cached.
 
-You might have to update the imports and add stuff here and there but this is the way you can do it.
-
-# Overriding a method from a Javascript file
-
-For overriding a method in a Javascript file, I use the same methodology as before:
-
-* Look the action in the network tools
-* Find the action in the files
-  
-But now we are not going to look for the action in the `.php` files, but in the `.js` files.
-
-
-
-
-
-
+If you are wondering about how to override the javascript files, it will come in another tutorial 😁.
