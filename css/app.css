@@ -330,7 +330,8 @@ hr {
 
 
 .footer {
-    transition: color 0.2s ease-out, background 0.2s ease-out;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
     text-align: center;
     /* padding: 0 0.2em; */
     /* margin-left: 1em; */
