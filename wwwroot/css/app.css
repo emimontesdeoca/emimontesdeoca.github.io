@@ -330,6 +330,7 @@ hr {
 
 
 .footer {
+    transition: color 0.2s ease-out, background 0.2s ease-out;
     text-align: center;
     /* padding: 0 0.2em; */
     /* margin-left: 1em; */
