@@ -1,0 +1,113 @@
+/* /Components/Header.razor.rz.scp.css */
+.header[b-lsu78v3sda] {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+
+.logo[b-lsu78v3sda] {
+    float: left;
+    margin: 0 0 1em 0;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 800;
+}
+
+.picture[b-lsu78v3sda] {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.header-right[b-lsu78v3sda] {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-mode[b-lsu78v3sda] {
+    cursor: pointer;
+}
+
+svg[b-lsu78v3sda] {
+    stroke: #b5b5b5;
+    transition: color 150ms ease;
+}
+
+    svg:hover[b-lsu78v3sda] {
+        transition: color 150ms ease;
+    }
+
+    svg.icon-header-sun:hover[b-lsu78v3sda] {
+        stroke: rgb(255, 236, 0);
+    }
+
+    svg.icon-header-moon:hover[b-lsu78v3sda] {
+        stroke: #000;
+    }
+
+    svg.icon-header-twitter:hover[b-lsu78v3sda] {
+        stroke: #1DA1F2;
+    }
+
+    svg.icon-header-github:hover[b-lsu78v3sda] {
+        stroke: #000;
+    }
+
+    svg.icon-header-linkedin:hover[b-lsu78v3sda] {
+        stroke: #2867B2;
+    }
+
+    svg.icon-header-at:hover[b-lsu78v3sda] {
+        stroke: darkred;
+    }
+
+a[b-lsu78v3sda], .header-left > a[b-lsu78v3sda], .header-right > a[b-lsu78v3sda] {
+    color: black;
+    text-decoration: none;
+    box-shadow: none !important;
+}
+/* /Components/PostItem.razor.rz.scp.css */
+.post-item[b-527jrwlq9v] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4em;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+
+
+.post-title[b-527jrwlq9v] {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    color: var(--textTitle);
+}
+
+.post-date[b-527jrwlq9v] {
+    padding: 0 0.2em;
+    margin-left: 1em;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    font-family: Montserrat, Arial, Sans-Serif;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: .875rem;
+    color: #b5b5b5;
+    max-width: 120px;
+    min-width: 110px;
+    text-align: right;
+}
+
+
+a[b-527jrwlq9v] {
+    color: black;
+    text-decoration: none;
+    box-shadow: none !important;
+}
