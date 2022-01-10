@@ -176,7 +176,7 @@ li, li > a {
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    margin-left: -20px;
+    color: var(--textNormal);
 }
 
     li::before {
