@@ -1,0 +1,92 @@
+﻿[
+  {
+    "title": "Integration test using Bot Framework and DirectLine (1)",
+    "path": "integration-test-bot-framework-1",
+    "date": "APR 24, 2018",
+    "enabled": true
+  },
+  {
+    "title": "Integration test using Bot Framework and DirectLine (2)",
+    "path": "integration-test-bot-framework-2",
+    "date": "APR 24, 2018",
+    "enabled": true
+  },
+  {
+    "title": "Integration test using Bot Framework and DirectLine (3)",
+    "path": "integration-test-bot-framework-3",
+    "date": "APR 24, 2018",
+    "enabled": true
+  },
+  {
+    "title": "Integration test using Bot Framework and DirectLine for flow cases",
+    "path": "integration-test-bot-framework-with-flow-cases",
+    "date": "APR 25, 2018",
+    "enabled": true
+  },
+  {
+    "title": "Custom languages using embedded and external resources in .NET Framework",
+    "path": "embedded-resources-and-external-resources",
+    "date": "MAY 6, 2019",
+    "enabled": true
+  },
+  {
+    "title": "Take page screenshots using Devtools",
+    "path": "google-chrome-screenshot-tool",
+    "date": "MAY 9, 2019",
+    "enabled": true
+  },
+  {
+    "title": "My take on in-memory cache",
+    "path": "my-take-on-in-memory-cache",
+    "date": "SEP 3, 2019",
+    "enabled": true
+  },
+  {
+    "title": "Continuous integration for a .NET Core 3.0 project using TravisCI",
+    "path": "ci-dotnet-core-and-travis-ci",
+    "date": "JAN 14, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Continuous delivery of NuGet package using TravisCI",
+    "path": "automated-nuget-deployment-travis-ci",
+    "date": "JAN 21, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Dynamic object generation using ExpandoObject",
+    "path": "dynamic-object-generation-expando-object",
+    "date": "MAR 6, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Make terminal load bash on WSL home directory",
+    "path": "bash-straight-to-wsl-machine-with-terminal",
+    "date": "SEP 22, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Adding compiled libraries to a NuGet package",
+    "path": "adding-compiled-dll-to-nuget",
+    "date": "OCT 1, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Configure the Apple Magic Keyboard 2 on Windows 10",
+    "path": "configure-apple-keyboard-windows",
+    "date": "NOV 11, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Overriding a core controller of Pimcore",
+    "path": "override-method-pimcore-core-bundles",
+    "date": "DEC 10, 2020",
+    "enabled": true
+  },
+  {
+    "title": "Uploading files to Azure Blob Storage in Blazor",
+    "path": "uploading-files-az-blob-blazor",
+    "date": "JAN 6, 2022",
+    "enabled": false
+  }
+]

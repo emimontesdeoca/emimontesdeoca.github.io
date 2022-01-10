@@ -1,0 +1,73 @@
+﻿.header {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+
+.logo {
+    float: left;
+    margin: 0 0 1em 0;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 800;
+}
+
+.picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-mode {
+    cursor: pointer;
+}
+
+svg {
+    stroke: #b5b5b5;
+    transition: color 150ms ease;
+}
+
+    svg:hover {
+        transition: color 150ms ease;
+    }
+
+    svg.icon-header-sun:hover {
+        stroke: rgb(255, 236, 0);
+    }
+
+    svg.icon-header-moon:hover {
+        stroke: #000;
+    }
+
+    svg.icon-header-twitter:hover {
+        stroke: #1DA1F2;
+    }
+
+    svg.icon-header-github:hover {
+        stroke: #000;
+    }
+
+    svg.icon-header-linkedin:hover {
+        stroke: #2867B2;
+    }
+
+    svg.icon-header-at:hover {
+        stroke: darkred;
+    }
+
+a, .header-left > a, .header-right > a {
+    color: black;
+    text-decoration: none;
+    box-shadow: none !important;
+}

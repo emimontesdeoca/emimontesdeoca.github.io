@@ -1,0 +1,19 @@
+﻿<PageTitle>@Data?.Title → Emiliano Montesdeoca</PageTitle>
+
+<h4 class="post-content-date">
+    @Data?.Date
+</h4>
+<h1 class="post-content-title">
+    @Data?.Title
+</h1>
+
+<div id="markdown">
+    @((MarkupString) MarkdownContent)
+</div>
+
+@if (Loaded)
+{
+    <div id="after-post" class="after-post">
+        <p>Share on <a target="_blank" href="@GetTwitterUrl">Twitter</a> · Edit this on <a target="_blank" href="@GetEditUrl">Github</a></p>
+    </div>
+}

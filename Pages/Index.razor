@@ -1,0 +1,16 @@
+﻿@page "/{path?}"
+@inject IConfiguration Configuration
+
+@if (string.IsNullOrEmpty(this.Path))
+{
+    @foreach (var post in Posts.Where(x => x.Enabled))
+    {
+        <Blog.Components.PostItem Data=@post />
+    }
+}
+else
+{
+    <Blog.Components.PostContent Data=@Post Content=@Content />
+}
+
+<p class="footer">Opinions and ideas are my own · created by <a href="@Configuration["Socials:Twitter"]">Emiliano Montesdeoca</a></p>
