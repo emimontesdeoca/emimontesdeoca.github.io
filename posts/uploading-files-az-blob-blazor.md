@@ -23,25 +23,33 @@ After it has loaded, click on `Create`.
 
 A form will appear with a bunch of steps so go ahead and fill them.
 
+<img src="https://i.gyazo.com/2293db6fea38aa8b9c61980d088c56c4.png" />
+
 After filling everything with the settings you want, pass the validation and create the resource.
 
+<img src="https://i.gyazo.com/f416db52c958744f8e9ca1dbe904a790.png" />
+
 After it has been created, click on `Go to resource`. We are going to get a connection string that will let us play with the API.
+
+<img src="https://i.gyazo.com/713702e57e8c18db16ec214ea999507f.png" />
 
 # Get the resource keys
 
 After we got to our newly created resource, go to `Acccess keys` under the `Security + networking`. After loading you will see a `Connection string` and `Key`, copy them because we are going to need them later!
 
-# Creating a cool Blazor Webassembly project
+<img src="https://i.gyazo.com/87af79ff72e5973f3fbcdf22547d2c54.png" />
+
+# Creating a cool Blazor Server project
 
 I'm going to be using Visual Studio 2022 for this tutorial, but as I said before, you can use any other IDE and just create the project using the `dotnet` CLI.
 
 Then let's go ahead and create a Blazor poject real quick using Visual Studio in just a bunch of steps.
 
-<img src="https://i.gyazo.com/36476ac771ee1f7cb322c44d11b78fc3.png" />
+<img src="https://i.gyazo.com/fab7bbabc9601132c8554c0b83ff4f58.png" />
 
 <img src="https://i.gyazo.com/dd015b5c8f1a46c2df0fa5af7cfc08e4.png" />
 
-<img src="https://i.gyazo.com/d47038406d160d9572a4d5b2927bd660.png" />
+<img src="https://i.gyazo.com/e7225a77fb3a91c2fb5d39877165e9b8.png" />
 
 If we run what we just created it will look like this, just a plain normal Blazor application.
 
@@ -217,11 +225,15 @@ private async Task HandleValidSubmit()
 
 Now is time to test the code, in order to do so, just fill the form and click on submit.
 
-<GIF WORKING>
+<img src="https://i.gyazo.com/4ce26ec6487038f3bc70c8e977b16215.png"/>
 
 We will display an alert and the file should be uploaded to the Azure Blob Storage, go to the Azure Portal and take a look.
 
-<AZURE PORTAL IMAGE>
+<img src="https://i.gyazo.com/8c070489d4aa6a9f917d685a2ba670f3.png"/>
+
+As you can see, the container was also created, now if we get inside the container, we see the file we uploaded.
+
+<img src="https://i.gyazo.com/166076b94e065578a3aaa4012d3b5c37.png"/>
 
 Good job!
 

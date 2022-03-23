@@ -84,9 +84,30 @@
     "enabled": true
   },
   {
+    "title": "#Session: allô? Soy un bot. Telephony channel",
+    "path": "https://www.youtube.com/watch?v=1xEmo2hxzBE",
+    "date": "APR 16, 2021",
+    "isExternal": true,
+    "enabled": true
+  },
+  {
+    "title": "#Session: Adiós Javascript! Azure Static Web Apps en .NET y Blazor",
+    "path": "https://www.youtube.com/watch?v=35WD6U9j_2E",
+    "date": "OCT 1, 2021",
+    "isExternal": true,
+    "enabled": true
+  },
+  {
+    "title": "#IntelequiaTeam: Introduccion to Blazor",
+    "path": "https://intelequia.com/en/blog/post/3190/introduction-to-blazor-what-is-blazor-and-how-to-create-an-application-in-blazor",
+    "date": "MAR 21, 2021",
+    "isExternal": true,
+    "enabled": true
+  },
+  {
     "title": "Uploading files to Azure Blob Storage in Blazor",
     "path": "uploading-files-az-blob-blazor",
-    "date": "JAN 6, 2022",
-    "enabled": false
+    "date": "MAR 23, 2022",
+    "enabled": true
   }
 ]
