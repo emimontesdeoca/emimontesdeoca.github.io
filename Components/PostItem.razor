@@ -1,4 +1,4 @@
-﻿<a href="/@Data?.Path" class="post-item">
+﻿<a href="@GetPath()" class="post-item">
     <div class="post-title">@Data?.Title</div>
     <div class="post-date">@Data?.Date</div>
 </a>
@@ -6,4 +6,6 @@
 @code {
     [Parameter, EditorRequired]
     public Blog.Models.Post? Data { get; set; }
+
+    public string GetPath() => Data.IsExternal ? $"{Data?.Path}" : $"/{Data?.Path}";
 }

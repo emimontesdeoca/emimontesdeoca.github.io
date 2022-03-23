@@ -1,4 +1,4 @@
-﻿@page "/{path?}"
+﻿@page "/{*path}"
 @inject IConfiguration Configuration
 
 @if (string.IsNullOrEmpty(this.Path))
@@ -7,10 +7,13 @@
     {
         <Blog.Components.PostItem Data=@post />
     }
+
+    @if (Loaded)
+    {
+        <p class="footer">Opinions and ideas are my own · A Personal blog by <a href="@Configuration["Socials:Twitter"]">Emiliano Montesdeoca</a></p>
+    }
 }
 else
 {
     <Blog.Components.PostContent Data=@Post Content=@Content />
 }
-
-<p class="footer">Opinions and ideas are my own · A Personal blog by <a href="@Configuration["Socials:Twitter"]">Emiliano Montesdeoca</a></p>

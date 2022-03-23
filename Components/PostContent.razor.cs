@@ -36,21 +36,19 @@ namespace Blog.Components
         #region Methods
 
         public string MarkdownContent => Markdown.ToHtml(Content ?? string.Empty);
-        public string GetEditUrl => $"https://github.com/emimontesdeoca/blog/edit/main/Blog/wwwroot/posts/{Data?.Path}.md";
+        public string GetEditUrl => $"https://github.com/emimontesdeoca/emimontesdeoca.github.io/edit/master/wwwroot/posts/{Data?.Path}.md";
         public string GetTwitterUrl => $"https://twitter.com/intent/tweet?text={Data.Title} {NavigationManager.Uri}";
+
+        public string GetDisplayStyle => Loaded ? "display:inline" : "display:none";
 
         #endregion
 
         #region Overrides
 
-        protected override async Task OnAfterRenderAsync(bool firstRender)
+        protected override void OnAfterRender(bool firstRender)
         {
-            if (firstRender)
-            {
-                await JSRuntime.InvokeVoidAsync("highlightCode");
-                Loaded = true;
-            }
-
+            JSRuntime?.InvokeVoidAsync("highlightCode");
+            Loaded = true;
         }
 
         #endregion

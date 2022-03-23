@@ -31,6 +31,8 @@ namespace Blog.Pages
 
         private List<Post> Posts = new();
 
+        public bool Loaded { get; set; } = false;
+
         #endregion
 
         #region Overrides
@@ -43,6 +45,9 @@ namespace Blog.Pages
 
         protected override async Task OnParametersSetAsync()
         {
+            Loaded = true;
+            StateHasChanged();
+
             Content = string.Empty;
 
             if (!string.IsNullOrEmpty(Path))
@@ -60,6 +65,9 @@ namespace Blog.Pages
                               ?? string.Empty;
                 }
             }
+
+            Loaded = true;
+            StateHasChanged();
         }
 
         #endregion

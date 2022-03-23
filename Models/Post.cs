@@ -14,5 +14,7 @@ namespace Blog.Models
         public string? Date { get; set; }
         [JsonProperty("enabled")]
         public bool Enabled { get; set; }
+        [JsonProperty("isExternal")]
+        public bool IsExternal { get; set; }
     }
 }
