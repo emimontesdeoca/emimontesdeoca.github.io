@@ -100,7 +100,7 @@
   {
     "title": "#IntelequiaTeam: Introduccion to Blazor",
     "path": "https://intelequia.com/en/blog/post/3190/introduction-to-blazor-what-is-blazor-and-how-to-create-an-application-in-blazor",
-    "date": "MAR 21, 2021",
+    "date": "MAR 21, 2022",
     "isExternal": true,
     "enabled": true
   },
@@ -108,6 +108,12 @@
     "title": "Uploading files to Azure Blob Storage in Blazor",
     "path": "uploading-files-az-blob-blazor",
     "date": "MAR 23, 2022",
+    "enabled": true
+  },
+  {
+    "title": "Toggle darkmode with Javascript Interop in Blazor",
+    "path": "blazor-toggle-darkmode",
+    "date": "APR 1, 2022",
     "enabled": true
   }
 ]
