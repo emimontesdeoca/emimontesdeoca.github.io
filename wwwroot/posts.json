@@ -111,7 +111,7 @@
     "enabled": true
   },
   {
-    "title": "Toggle darkmode with Javascript Interop in Blazor",
+    "title": "Toggle themes with Javascript Interop in Blazor",
     "path": "blazor-toggle-darkmode",
     "date": "APR 1, 2022",
     "enabled": true
