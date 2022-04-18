@@ -115,5 +115,11 @@
     "path": "blazor-toggle-darkmode",
     "date": "APR 1, 2022",
     "enabled": true
+  },
+  {
+    "title": "Generate dacpacs from Visual Studio atabase project in Github Actions",
+    "path": "generate-dacpacs-github-actions",
+    "date": "APR 18, 2022",
+    "enabled": true
   }
 ]
