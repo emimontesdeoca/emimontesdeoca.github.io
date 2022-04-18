@@ -117,7 +117,7 @@
     "enabled": true
   },
   {
-    "title": "Generate dacpacs from Visual Studio atabase project in Github Actions",
+    "title": "Generate *.dacpac files from VS Database project in Github Actions",
     "path": "generate-dacpacs-github-actions",
     "date": "APR 18, 2022",
     "enabled": true
