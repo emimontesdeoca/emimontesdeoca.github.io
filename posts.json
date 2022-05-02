@@ -123,7 +123,7 @@
     "enabled": true
   },
   {
-    "title": "Focusing an element on Blazor",
+    "title": "Focusing an element in Blazor",
     "path": "focus-element-blazor",
     "date": "MAY 5, 2022",
     "enabled": true
