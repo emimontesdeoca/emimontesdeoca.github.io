@@ -121,5 +121,11 @@
     "path": "generate-dacpacs-github-actions",
     "date": "APR 18, 2022",
     "enabled": true
+  },
+  {
+    "title": "Focusing an element on Blazor",
+    "path": "focus-element-blazor",
+    "date": "MAY 5, 2022",
+    "enabled": true
   }
 ]
