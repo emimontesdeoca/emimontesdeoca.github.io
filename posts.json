@@ -127,5 +127,11 @@
     "path": "focus-element-blazor",
     "date": "MAY 5, 2022",
     "enabled": true
+  },
+  {
+    "title": "Getting the expiration date from a certificate",
+    "path": "expiration-date-certificate",
+    "date": "MAY 27, 2022",
+    "enabled": true
   }
 ]
