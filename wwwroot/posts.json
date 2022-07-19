@@ -133,5 +133,11 @@
     "path": "expiration-date-certificate",
     "date": "MAY 27, 2022",
     "enabled": true
+  },
+  {
+    "title": "Handle loading components in Blazor",
+    "path": "loading-component-blazor",
+    "date": "JUL 19, 2022",
+    "enabled": true
   }
 ]
