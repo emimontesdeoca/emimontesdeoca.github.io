@@ -139,5 +139,11 @@
     "path": "loading-component-blazor",
     "date": "JUL 19, 2022",
     "enabled": true
+  },
+  {
+    "title": "Custom attributes on .NET 6 Core API",
+    "path": "custom-attributes-net-6-core-api",
+    "date": "DEC 09, 2022",
+    "enabled": true
   }
 ]
