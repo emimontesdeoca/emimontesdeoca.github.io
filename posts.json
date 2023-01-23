@@ -145,5 +145,11 @@
     "path": "custom-attributes-net-6-core-api",
     "date": "DEC 09, 2022",
     "enabled": true
+  },
+  {
+    "title": "Updating Identity's routes in ASP.NET Core 7",
+    "path": "identity-url-change",
+    "date": "JAN 23, 2023",
+    "enabled": true
   }
 ]
