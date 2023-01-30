@@ -151,5 +151,11 @@
     "path": "identity-url-change",
     "date": "JAN 23, 2023",
     "enabled": true
+  },
+  {
+    "title": "Cleanup local branches in Git",
+    "path": "cleanup-local-branches",
+    "date": "JAN 30, 2023",
+    "enabled": true
   }
 ]
