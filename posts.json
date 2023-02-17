@@ -157,5 +157,11 @@
     "path": "cleanup-local-branches",
     "date": "JAN 30, 2023",
     "enabled": true
+  },
+  {
+    "title": "Swagger documentation with external libraries",
+    "path": "swagger-libraries-documentation",
+    "date": "FEB 17, 2023",
+    "enabled": true
   }
 ]
