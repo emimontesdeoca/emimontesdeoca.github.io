@@ -163,5 +163,11 @@
     "path": "swagger-libraries-documentation",
     "date": "FEB 17, 2023",
     "enabled": true
+  },
+  {
+    "title": "Dependency injection with Attributes on .NET API",
+    "path": "api-di-attributes",
+    "date": "AUG 22, 2023",
+    "enabled": true
   }
 ]
