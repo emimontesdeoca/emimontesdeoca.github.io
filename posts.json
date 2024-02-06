@@ -175,5 +175,11 @@
     "path": "custom-iservicecollection-services",
     "date": "SEP 04, 2023",
     "enabled": true
+  },
+  {
+    "title": "Custom exception handling on .NET API",
+    "path": "custom-exception-handler-api",
+    "date": "OCT 01, 2023",
+    "enabled": true
   }
 ]
