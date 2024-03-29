@@ -181,5 +181,11 @@
     "path": "custom-exception-handler-api",
     "date": "OCT 01, 2023",
     "enabled": true
+  },
+  {
+    "title": "Custom ValidationAttribute and Blazor valdation",
+    "path": "custom-validationattribute-blazor",
+    "date": "MART 29, 2024",
+    "enabled": true
   }
 ]
