@@ -187,5 +187,11 @@
     "path": "custom-validationattribute-blazor",
     "date": "MAR 29, 2024",
     "enabled": true
+  },
+  {
+    "title": "Using containers to... keep track of Christmas presents' prices?",
+    "path": "monitoring-prices-containers",
+    "date": "12 DEC, 2024",
+    "enabled": true
   }
 ]
