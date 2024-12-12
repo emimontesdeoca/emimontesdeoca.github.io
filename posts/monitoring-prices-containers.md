@@ -581,10 +581,6 @@ After loading `http://localhost:5001` in your browser, the Blazor app should now
 
 Building this price monitoring system has been a festive blast! Not only did it save me from the stress of daily price checks, but it also showcased the magic of modern web technologies.
 
-Participating in the Festive Tech Calendar 2024 has been a joy, and it's for a fantastic cause supporting the Beatson Cancer Charity.
-
-I hope this guide adds a sprinkle of holiday magic to your coding journey. If you have any questions or just want to share your excitement, feel free to reach out to me. Happy coding and Merry Christmas, everyone!
-
 ---
 
 # Festive Tech Calendar 2024
