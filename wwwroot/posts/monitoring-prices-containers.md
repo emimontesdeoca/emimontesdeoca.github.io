@@ -597,7 +597,7 @@ Check out the Festive Tech Calendar website at [https://festivetechcalendar.com]
 
 ---
 
-**HO HO HO!**
+# **HO HO HO!**
 
 Creating this project has been a wonderful way to contribute to the festive tech community and support a great cause at the same time.
 
