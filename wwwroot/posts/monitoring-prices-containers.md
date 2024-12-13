@@ -581,8 +581,6 @@ After loading `http://localhost:5001` in your browser, the Blazor app should now
 
 Building this price monitoring system has been a festive blast! Not only did it save me from the stress of daily price checks, but it also showcased the magic of modern web technologies.
 
----
-
 # Festive Tech Calendar 2024
 
 <p align="center">
@@ -594,8 +592,6 @@ I created this post as part of the **Festive Tech Calendar 2024** event, which b
 **Festive Tech Calendar 2024** is supporting the Beatson Cancer Charity this year. The Beatson Cancer Charity is dedicated to supporting people affected by cancer, their families, and the healthcare professionals who care for them. More information about their incredible work can be found at [https://www.beatsoncancercharity.org/](https://www.beatsoncancercharity.org/).
 
 Check out the Festive Tech Calendar website at [https://festivetechcalendar.com](https://festivetechcalendar.com) for frequently asked questions and more details about the event.
-
----
 
 # **HO HO HO!**
 
