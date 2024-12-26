@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "Blog",
   "resources": {
-    "hash": "sha256-625FLAAjkdNVp13MDix7D94+LbS1JjTHlkH4PMxw8Eg=",
+    "hash": "sha256-BCNsKb0Baw6NxQG2mXzIbBFB3d9RV3wcnye6kkMub7w=",
     "fingerprinting": {
-      "Blog.jrwzmj3r3k.wasm": "Blog.wasm",
+      "Blog.w0tqvqys52.wasm": "Blog.wasm",
       "Markdig.y4i0b9whld.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Components.ro02d05jg9.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.7yvofxhswa.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -93,7 +93,7 @@
       "System.Runtime.InteropServices.JavaScript.3uvku0ibnu.wasm": "sha256-K5wa4QwWB8A0OrHM4yWK86Nl6ItEv9c3ctAASLMYLKo="
     },
     "assembly": {
-      "Blog.jrwzmj3r3k.wasm": "sha256-n4Ko2aqjt+5P//gWZ/M+fxYMLUDoBy4HwlmwFKImsxg=",
+      "Blog.w0tqvqys52.wasm": "sha256-cFzO+iC2/J41/nj7DpZfbGsILiXnuf148CCdyRoWc18=",
       "Markdig.y4i0b9whld.wasm": "sha256-LrX4yrb2vyi8O8AjNTkqYrOAMLTaPBVsT/Fjji1HxIY=",
       "Microsoft.AspNetCore.Components.ro02d05jg9.wasm": "sha256-+6z80KFYibgvGxWAr6BVmBOcCH6Bhw0p3coG87E935g=",
       "Microsoft.AspNetCore.Components.Web.7yvofxhswa.wasm": "sha256-QaU3MCJZXUPpTg3z+sdNujuTSOqUW4O70/Rc6aQj1xU=",
