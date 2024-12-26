@@ -37,7 +37,7 @@ namespace Blog.Components
 
         public string MarkdownContent => Markdown.ToHtml(Content ?? string.Empty);
         public string GetEditUrl => $"https://github.com/emimontesdeoca/emimontesdeoca.github.io/edit/master/wwwroot/posts/{Data?.Path}.md";
-        public string GetTwitterUrl => $"https://twitter.com/intent/tweet?text={Data.Title} {NavigationManager.Uri}";
+        public string GetTwitterUrl => $"https://twitter.com/intent/tweet?text={Data!.Title} {NavigationManager!.Uri}";
 
         public string GetDisplayStyle => Loaded ? "display:inline" : "display:none";
 
