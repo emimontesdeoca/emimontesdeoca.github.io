@@ -43,7 +43,7 @@ But let's go step by step creating stuff!
 
 The core of the Receipt Scanner application relies on several key models that facilitate the interaction between the front-end, API, and AI services. Below are the main models used in this project:
 
-1. **AnalyzeReceiptRequest**  
+- **AnalyzeReceiptRequest**  
    This model represents the request structure for analyzing a receipt. It contains the `ImageBytes` property, which holds the byte array of the receipt image that will be processed.
 
    ```csharp
@@ -53,7 +53,7 @@ The core of the Receipt Scanner application relies on several key models that fa
    }
    ```
 
-2. **ReceiptAnalyzeResult**  
+- **ReceiptAnalyzeResult**  
    This model captures the result after processing a receipt. It holds the structured data extracted from the receipt, such as the store name, date, items, and total amount.
 
    ```csharp
@@ -64,7 +64,7 @@ The core of the Receipt Scanner application relies on several key models that fa
    }
    ```
 
-3. **ReceiptData**  
+- **ReceiptData**  
    This is the model that holds the structured receipt data. It includes properties for the store name, date, a list of items (with each item’s name and price), and the total amount on the receipt.
 
    ```csharp
@@ -77,7 +77,7 @@ The core of the Receipt Scanner application relies on several key models that fa
    }
    ```
 
-4. **ReceiptItem**  
+-  **ReceiptItem**  
    Each item on the receipt is represented by this model. It holds the item name and its price.
 
    ```csharp
