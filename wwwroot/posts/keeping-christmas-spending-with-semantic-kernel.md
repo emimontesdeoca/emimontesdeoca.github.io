@@ -1,6 +1,4 @@
-﻿# Controlling Christmas Spending with Semantic Kernel
-
-<p align="center">
+﻿<p align="center">
 <img src="https://s5.ezgif.com/tmp/ezgif-5-5801850393.gif"/>
 </p>
 
