@@ -1,8 +1,4 @@
-﻿<p align="center">
-<img src="https://s5.ezgif.com/tmp/ezgif-5-5801850393.gif"/>
-</p>
-
-## Introduction
+﻿## Introduction
 
 As the holiday season approaches, managing expenses can become a challenge, especially with the flurry of shopping and gift purchases. In this blog post, we'll explore how to leverage artificial intelligence to help keep track of your Christmas spending using .NET technologies. By analyzing receipts with the power of the Semantic Kernel and AI, we can efficiently extract key details such as store names, dates, item lists, and total amounts. This solution allows you to effortlessly monitor and manage your Christmas spending, ensuring you stay on top of your budget without the hassle of manually reviewing receipts.
 
