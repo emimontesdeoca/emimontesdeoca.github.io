@@ -20,19 +20,19 @@ namespace Blog.Components
     public partial class Header
     {
         [Inject]
-        public IJSRuntime? JSRuntime { get; set; }
+        public IJSRuntime? JSRuntime { get; set; } = default;
         public bool IsDarkMode { get; set; } = false;
 
         public async Task ToggleDarkMode()
         {
-            var theme = await JSRuntime.InvokeAsync<string>("toggleTheme");
+            var theme = await JSRuntime!.InvokeAsync<string>("toggleTheme");
             IsDarkMode = theme == "dark";
         }
 
         protected override async Task OnInitializedAsync()
         {
-            await JSRuntime.InvokeVoidAsync("loadTheme");
-            var value = (await JSRuntime.InvokeAsync<string>("getTheme") == "dark");
+            await JSRuntime!.InvokeVoidAsync("loadTheme");
+            var value = (await JSRuntime!.InvokeAsync<string>("getTheme") == "dark");
             IsDarkMode =value;
         }
     }

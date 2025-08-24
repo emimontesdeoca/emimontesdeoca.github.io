@@ -39,7 +39,7 @@ namespace Blog.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            Posts = await HttpClient.GetFromJsonAsync<List<Post>>("posts.json") ?? new();
+            Posts = await HttpClient!.GetFromJsonAsync<List<Post>>("posts.json") ?? new();
             Posts?.Reverse();
         }
 
@@ -57,11 +57,11 @@ namespace Blog.Pages
                 if (Post == null)
                 {
                     Path = string.Empty;
-                    NavigationManager.NavigateTo("/");
+                    NavigationManager!.NavigateTo("/");
                 }
                 else
                 {
-                    Content = await HttpClient.GetStringAsync($"/posts/{Path}.md")
+                    Content = await HttpClient!.GetStringAsync($"/posts/{Path}.md")
                               ?? string.Empty;
                 }
             }
