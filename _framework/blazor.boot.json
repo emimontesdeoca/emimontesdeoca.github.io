@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Blog",
   "resources": {
-    "hash": "sha256-p1vEh6/bm7WZzI225e5Mvs/pQVxWx+UzwSVRAfFtztw=",
+    "hash": "sha256-8xHmFkli6Z2FvtQDPNSH3buiIYX8oy2nnW41UbM3lLE=",
     "fingerprinting": {
       "Markdig.ato3fn3juu.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Components.t6g64c4b82.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -65,7 +65,7 @@
       "System.Xml.XDocument.rq3uoqeade.wasm": "System.Xml.XDocument.wasm",
       "System.t4d4s3f398.wasm": "System.wasm",
       "System.Private.CoreLib.sw5odx5ea4.wasm": "System.Private.CoreLib.wasm",
-      "Blog.kvb4v2k9rx.wasm": "Blog.wasm",
+      "Blog.he7j3zl0aa.wasm": "Blog.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.noby4tlk4d.js": "dotnet.native.js",
       "dotnet.native.qe75a9vfqn.wasm": "dotnet.native.wasm",
@@ -153,7 +153,7 @@
       "System.Xml.ReaderWriter.mtidk7trhm.wasm": "sha256-dr+sbTBA877XYK/jZngLiD22MYG5pB38qdu1JXk5Ifo=",
       "System.Xml.XDocument.rq3uoqeade.wasm": "sha256-jXHocYVCS/ThppEaX8pR/Ky4h/AvzicYqHMda1gq83I=",
       "System.t4d4s3f398.wasm": "sha256-fVP2BxRRKpBA0PmBbKxmO45bXDrAXVn1GthlDclLbeU=",
-      "Blog.kvb4v2k9rx.wasm": "sha256-4KPgqUIvqfLJZlHdHv/MT4lEQwWpPRyJEZWoYlWBZ40="
+      "Blog.he7j3zl0aa.wasm": "sha256-OUt9I8pst0R29p71I1PzMJEq8reO9M8fr5NpSocynoU="
     }
   },
   "cacheBootResources": true,
