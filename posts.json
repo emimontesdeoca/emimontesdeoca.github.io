@@ -205,5 +205,11 @@
     "path": "ai-agent-socials",
     "date": "12 DEC, 2025",
     "enabled": true
+  },
+  {
+    "title": "Microsoft's Agent Framework to save the Christmas",
+    "path": "agent-framework-christmas-presents",
+    "date": "16 DEC, 2025",
+    "enabled": true
   }
 ]
