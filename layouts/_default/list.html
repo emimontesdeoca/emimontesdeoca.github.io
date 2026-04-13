@@ -4,7 +4,7 @@
 
   <div class="space-y-1">
     {{ range .Pages.ByDate.Reverse }}
-    <a href="{{ .RelPermalink }}" class="group block py-3 -mx-3 px-3 rounded-lg hover:bg-gh-bg-secondary transition-colors">
+    <a href="{{ .RelPermalink }}" class="group block py-3 -mx-3 px-3 rounded-lg hover:bg-gh-bg-secondary transition-colors" data-umami-event="list-post-click" data-umami-event-title="{{ .Title }}">
       <div class="flex items-baseline justify-between gap-4">
         <h2 class="text-base font-medium text-gh-text group-hover:text-gh-accent transition-colors truncate">
           {{ .Title }}

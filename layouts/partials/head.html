@@ -42,8 +42,4 @@
 <!-- Umami Analytics -->
 {{ if .Site.Params.umami.enabled }}
 <script defer src="{{ .Site.Params.umami.scriptURL }}" data-website-id="{{ .Site.Params.umami.websiteId }}"></script>
-{{ else }}
-<!-- Umami: Add your tracking script here
-<script defer src="https://your-umami-instance.com/script.js" data-website-id="your-website-id"></script>
--->
 {{ end }}

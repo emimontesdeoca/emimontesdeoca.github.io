@@ -17,11 +17,11 @@ enableEmoji = true
   email = "emimontesdeoca@outlook.es"
   blog = "https://thedotnetblog.com"
 
-  # Umami Analytics (fill in your values)
+  # Umami Analytics
   [params.umami]
-    enabled = false
-    websiteId = ""
-    scriptURL = ""
+    enabled = true
+    websiteId = "0834ea36-1ac0-457f-9953-04b28fe8df8f"
+    scriptURL = "https://analytics.emilianomontesdeoca.com/script.js"
 
 [markup]
   [markup.highlight]

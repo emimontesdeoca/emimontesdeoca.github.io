@@ -10,7 +10,8 @@
   </span>
   {{ range $translations }}
     <span class="text-gh-text-tertiary">·</span>
-    <a href="{{ .RelPermalink }}" class="font-medium text-gh-accent hover:text-gh-accent-hover transition-colors">
+    <a href="{{ .RelPermalink }}" class="font-medium text-gh-accent hover:text-gh-accent-hover transition-colors"
+      data-umami-event="post-translation-click" data-umami-event-lang="{{ .Language.Lang }}">
       {{ .Language.LanguageName }}
     </a>
   {{ end }}
