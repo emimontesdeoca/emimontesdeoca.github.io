@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="py-4">
+  <h1 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
+    Posts tagged <span class="text-gh-accent">#{{ .Title }}</span>
+  </h1>
+  <p class="text-gh-text-secondary mb-8">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</p>
+
+  <div class="space-y-1">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" class="group block py-3 -mx-3 px-3 rounded-lg hover:bg-gh-bg-secondary transition-colors">
+      <div class="flex items-baseline justify-between gap-4">
+        <h2 class="text-base font-medium text-gh-text group-hover:text-gh-accent transition-colors truncate">
+          {{ .Title }}
+        </h2>
+        <time class="text-sm text-gh-text-tertiary whitespace-nowrap flex-shrink-0" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

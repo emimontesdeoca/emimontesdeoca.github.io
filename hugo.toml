@@ -1,0 +1,96 @@
+baseURL = "https://emimontesdeoca.github.io/"
+languageCode = "en"
+title = "Emiliano Montes de Oca"
+theme = ""
+paginate = 10
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  description = "Microsoft MVP in Developer Technologies. Cloud Solutions Team Lead. Speaker, blogger, and community advocate."
+  author = "Emiliano Montes de Oca"
+  github = "https://github.com/emimontesdeoca"
+  twitter = "https://twitter.com/emimontesdeocaa"
+  linkedin = "https://www.linkedin.com/in/emimontesdeoca/"
+  instagram = "https://www.instagram.com/emimontesdeoca/"
+  sessionize = "https://sessionize.com/emimontesdeoca/"
+  email = "emimontesdeoca@outlook.es"
+  blog = "https://thedotnetblog.com"
+
+  # Umami Analytics (fill in your values)
+  [params.umami]
+    enabled = false
+    websiteId = ""
+    scriptURL = ""
+
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+    lineNos = false
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Speaking"
+    url = "/speaking/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es"
+    weight = 2
+  [languages.fr]
+    languageName = "Français"
+    languageCode = "fr"
+    weight = 3
+  [languages.de]
+    languageName = "Deutsch"
+    languageCode = "de"
+    weight = 4
+  [languages.pt]
+    languageName = "Português"
+    languageCode = "pt"
+    weight = 5
+  [languages.ko]
+    languageName = "한국어"
+    languageCode = "ko"
+    weight = 6
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja"
+    weight = 7
+  [languages.ru]
+    languageName = "Русский"
+    languageCode = "ru"
+    weight = 8
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh"
+    weight = 9
+  [languages.ar]
+    languageName = "العربية"
+    languageCode = "ar"
+    weight = 10

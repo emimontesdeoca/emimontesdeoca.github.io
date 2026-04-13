@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="space-y-12">
+  <!-- Hero -->
+  <section class="py-8">
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+      Hey, I'm <span class="text-gh-accent">Emi</span> 👋🏼
+    </h1>
+    <p class="text-lg text-gh-text-secondary leading-relaxed max-w-xl">
+      Microsoft MVP in Developer Technologies. Cloud Solutions Team Lead.
+      Writing about .NET, Azure, AI, and the things I learn along the way.
+    </p>
+  </section>
+
+  <!-- Latest posts -->
+  <section>
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-xl font-semibold">Latest posts</h2>
+      <a href="/posts/" class="text-sm text-gh-accent hover:text-gh-accent-hover transition-colors">
+        View all →
+      </a>
+    </div>
+    <div class="space-y-1">
+      {{ range first 8 (where .Site.RegularPages.ByDate.Reverse "Section" "posts") }}
+      <a href="{{ .RelPermalink }}" class="group block py-3 -mx-3 px-3 rounded-lg hover:bg-gh-bg-secondary transition-colors">
+        <div class="flex items-baseline justify-between gap-4">
+          <h3 class="text-base font-medium text-gh-text group-hover:text-gh-accent transition-colors truncate">
+            {{ .Title }}
+          </h3>
+          <time class="text-sm text-gh-text-tertiary whitespace-nowrap flex-shrink-0" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "Jan 2, 2006" }}
+          </time>
+        </div>
+        {{ with .Description }}
+        <p class="text-sm text-gh-text-secondary mt-1 line-clamp-1">{{ . }}</p>
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}
