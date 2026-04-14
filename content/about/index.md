@@ -1,12 +1,12 @@
 ---
 title: "About"
-description: "About Emiliano Montes de Oca — Microsoft MVP, Cloud Solutions Team Lead, and community advocate."
+description: "About Emiliano Montesdeoca — Microsoft MVP, Cloud Solutions Team Lead, and community advocate."
 layout: "single"
 ---
 
 ## About me
 
-I'm **Emiliano Montes de Oca**, a Uruguayan-Spanish software developer, **Microsoft MVP in Developer Technologies**, and proud dad based in **Tenerife, Canary Islands**.
+I'm **Emiliano Montesdeoca**, a Uruguayan-Spanish software developer, **Microsoft MVP in Developer Technologies**, and proud dad based in **Tenerife, Canary Islands**.
 
 I love tackling complex technical challenges and building scalable cloud solutions with Microsoft technologies. My daily toolkit revolves around **.NET**, **Azure**, **AI with Semantic Kernel**, and modern architectures like **.NET Aspire**.
 

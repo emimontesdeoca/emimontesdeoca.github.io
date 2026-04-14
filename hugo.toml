@@ -1,6 +1,6 @@
 baseURL = "https://emimontesdeoca.github.io/"
 languageCode = "en"
-title = "Emiliano Montes de Oca"
+title = "Emiliano Montesdeoca"
 theme = ""
 paginate = 10
 enableRobotsTXT = true
@@ -8,7 +8,7 @@ enableEmoji = true
 
 [params]
   description = "Microsoft MVP in Developer Technologies. Cloud Solutions Team Lead. Speaker, blogger, and community advocate."
-  author = "Emiliano Montes de Oca"
+  author = "Emiliano Montesdeoca"
   github = "https://github.com/emimontesdeoca"
   twitter = "https://twitter.com/emimontesdeocaa"
   linkedin = "https://www.linkedin.com/in/emimontesdeoca/"

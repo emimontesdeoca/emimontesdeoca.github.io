@@ -1,6 +1,6 @@
 ---
 title: "Speaking"
-description: "Conference talks and sessions by Emiliano Montes de Oca — Microsoft MVP and international speaker."
+description: "Conference talks and sessions by Emiliano Montesdeoca — Microsoft MVP and international speaker."
 layout: "single"
 ---
 
