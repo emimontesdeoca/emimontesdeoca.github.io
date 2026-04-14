@@ -1,5 +1,5 @@
 ---
-title: "Generate *.dacpac files from VS Database project in Github Actions"
+title: "Generate *.dacpac files from VS Database project in GitHub Actions"
 date: 2022-04-18T00:00:00Z
 draft: false
 tags: ["CI/CD"]

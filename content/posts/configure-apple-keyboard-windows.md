@@ -40,7 +40,7 @@ Some of this steps are from the documentation noted before:
 3. Download brigadier (a Python script that helps you to download the latest Boot Camp version).
 4. Please right-click the following link and save the file using "Save link as...". https://raw.githubusercontent.com/timsutton/brigadier/master/brigadier
 5. Open command prompt window (aka. DOS box) and change directory to where you downloaded the brigadier script.
-6. Assuming the brigadier script was saved as brigadier.txt, please run the following command:
+6. Assuming the brigadier script was saved as "brigadier.txt", please run the following command:
     *  If Python version 2.x is in your PATH: python brigadier.txt --model=MacBook13,2
     * Otherwise: [Path to the Python version 2.x]\python.exe brigadier.txt --model=MacBook13,2
 8. It will download a big bundle with all the drivers from bootcamp

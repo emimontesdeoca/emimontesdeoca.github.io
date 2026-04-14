@@ -386,7 +386,7 @@ In order to do this, login to the Travis CI page and go to your repositories, th
 
 We need to create a file called `.travis.yml` in the root of you project, this is because [as stated in the documentation](https://docs.travis-ci.com/user/tutorial/):
 
-> Travis only runs builds on the commits you push after youve added a .travis.yml file.
+> Travis only runs builds on the commits you push after you've added a .travis.yml file.
 
 So go and create a `.travis.yml` file in the root of the repository with the following lines:
 

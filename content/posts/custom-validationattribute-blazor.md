@@ -1,5 +1,5 @@
 ---
-title: "Custom ValidationAttribute and Blazor valdation"
+title: "Custom ValidationAttribute and Blazor validation"
 date: 2024-03-29T00:00:00Z
 draft: false
 tags: [".NET", "Blazor"]
