@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="py-4">
+  <h1 class="text-2xl sm:text-3xl font-bold tracking-tight mb-8">Tags</h1>
+  <div class="flex flex-wrap gap-2">
+    {{ range .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.RelPermalink }}"
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full
+             bg-gh-bg-secondary text-gh-text-secondary border border-gh-border
+             hover:bg-gh-bg-tertiary hover:text-gh-accent transition-colors">
+      {{ .Term }}
+      <span class="text-xs text-gh-text-tertiary">({{ .Count }})</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
