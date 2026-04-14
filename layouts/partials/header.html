@@ -1,14 +1,14 @@
 <header class="border-b border-gh-border sticky top-0 z-50 bg-gh-bg/95 backdrop-blur-sm">
   <nav class="max-w-prose mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-    <a href="/" class="text-lg font-semibold text-gh-text hover:text-gh-accent transition-colors" data-umami-event="nav-logo">
+    <a href="{{ relLangURL "/" }}" class="text-lg font-semibold text-gh-text hover:text-gh-accent transition-colors" data-umami-event="nav-logo">
       Emi
     </a>
     <div class="flex items-center gap-6">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}"
+      <a href="{{ .URL | relLangURL }}"
         data-umami-event="nav-{{ .Name | urlize }}"
         class="text-sm font-medium text-gh-text-secondary hover:text-gh-text transition-colors
-        {{ if (eq $.RelPermalink .URL) }}text-gh-text{{ end }}">
+        {{ if $.IsMenuCurrent "main" . }}text-gh-text{{ end }}">
         {{ .Name }}
       </a>
       {{ end }}

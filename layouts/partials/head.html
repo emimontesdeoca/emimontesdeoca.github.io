@@ -28,8 +28,8 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 <!-- Tailwind CSS -->
-{{ $css := resources.Get "css/main.css" | css.PostCSS }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ $css := resources.Get "css/main.css" | css.PostCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <!-- Theme detection -->
 <script>
