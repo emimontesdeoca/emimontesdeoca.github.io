@@ -20,7 +20,7 @@ enableEmoji = true
   # Umami Analytics
   [params.umami]
     enabled = true
-    websiteId = "0834ea36-1ac0-457f-9953-04b28fe8df8f"
+    websiteId = "b4fb65e0-9d35-4194-84ac-e5e98876383f"
     scriptURL = "https://analytics.emilianomontesdeoca.com/script.js"
 
 [markup]
